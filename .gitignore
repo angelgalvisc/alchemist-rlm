@@ -1,0 +1,24 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+.coverage
+.pytest_cache/
+build/
+dist/
+*.egg-info/
+logs/
+trajectories/
+
+# Model-written files must never reach the checkout. The session now runs in
+# its own temporary directory, so this is a second line of defence rather than
+# the fix: pairs.txt was committed into 30fbe42 before there was one.
+/pairs.txt
+/submission.txt
+
+# Local OOLONG-Pairs experiment output. Publication-grade episodes are added
+# explicitly with `git add -f`; exploratory runs stay on disk without making a
+# clean checkout appear modified.
+/configs/oolong_pairs_auto_inferred_format_pairs_pilot_*.json
+/configs/oolong_pairs_auto_pairs_pilot_*.json
+/runs/pairs_pilot_*/

@@ -1,0 +1,1033 @@
+{
+ "manifest": {
+  "run_id": "pairs_pilot_1787018382",
+  "arm": "alchemist",
+  "suite": "oolong_pairs_auto_inferred_format",
+  "fingerprint_sha256": "f4c86d1228bdebd3a82562a642c3c9949aea346700c5ceaee1087e8650338c5c",
+  "tasks_sha256": "47ed56ce4e0f0f96b4abfabc5144ec39c5b6cd9bf1031835d09361c8e2fcc91f",
+  "system_prompt_sha256": "79b1f56d1352c9c6d0f3fc7ff07e8b9d0ab99cb85d210017e6baebbea0b16691",
+  "tool_schema_sha256": "040c1d6ca85dcb6294721ddb6041d477c3e8819334859689e90b6bddd6a4aa3f",
+  "tool_name": "PythonInterpreter",
+  "sampling": {
+   "temperature": 0.0,
+   "seed": null,
+   "max_tokens": 4096,
+   "enable_thinking": false
+  },
+  "budget": {
+   "max_turns": 14,
+   "max_seconds": 900,
+   "max_output_tokens": 120000,
+   "max_subcalls": 600,
+   "max_nodes": 8,
+   "max_depth": 0,
+   "max_in_flight": 2,
+   "max_consecutive_errors": null,
+   "max_consecutive_truncations": 3,
+   "max_consecutive_duplicates": 3,
+   "depth": 0
+  },
+  "output_mode": "validate_repair",
+  "output_contract": {
+   "name": "oolong_pairs_lines",
+   "version": "1",
+   "specification": {
+    "empty_allowed": true,
+    "line": "(lower_numeric_id, higher_numeric_id)",
+    "separator": "newline",
+    "duplicates": false,
+    "trailing_newline": true
+   },
+   "binding": {
+    "name": "oolong_pairs_value_equivalence",
+    "version": "1",
+    "specification": {
+     "equivalence": "same set of numeric ID pairs"
+    },
+    "sha256": "1a0e4e160c9a0215e5fb50909c282cf4cf44ec598abb2fd7e384e08eda8f1d6b"
+   },
+   "sha256": "ed1a7a4693dea5bd1444d6b51e652461b09be3475d20ff04e60a39b2877dd1d4"
+  },
+  "output_contract_sha256": "ed1a7a4693dea5bd1444d6b51e652461b09be3475d20ff04e60a39b2877dd1d4",
+  "terminal_policy": {
+   "max_commit_attempts": 2,
+   "max_partial_recovery_attempts": 1,
+   "max_presentation_attempts": 3,
+   "max_protocol_retries": 2,
+   "max_presentation_build_turns": 2,
+   "max_presentation_commit_reserve": 1,
+   "max_presentation_tokens": 1024,
+   "max_feedback_chars": 4000
+  },
+  "output_backend_constraint": "none",
+  "presentation_spec_source": "model_question_only_v1",
+  "presentation_linter": "check_presentation_v1_after_invalid_candidate",
+  "runtime_determinism": {
+   "request_seed": null,
+   "temperature": 0.0,
+   "worker": {
+    "PYTHONHASHSEED": "0",
+    "random_seed": 0,
+    "TZ": "UTC",
+    "locale": "C",
+    "address_repr": "normalized"
+   },
+   "tool_call_ids": "canonical_turn_index",
+   "visible_requests": "strict_json_sha256"
+  },
+  "isolation_policy": {
+   "name": "mlx_prompt_cache_reset_v1",
+   "scope": "before_each_root_episode",
+   "postcondition": {
+    "sequences": 0,
+    "bytes": 0
+   }
+  },
+  "leaf_prompt_sha256": "54aa3d8f1ab0a8f34c7df35fcd2764e63b89798d648b304108a81089b2f7cc2d",
+  "leaf_max_tokens": 1024,
+  "bound_names_sha256": "7f7c6cb8a70ce5170762f964f90a165a55f922ba23f0350f7284be98a27b8e3f",
+  "leaf_contract_sha256": "b9b985489abb146a525b34966ff502d0160e5f45e7c911510f3c89528d0d036e",
+  "interaction_contract_sha256": "879f1752c3406e804605a067801b5d364f997ddfcc836ebec12a1d473dc26bce",
+  "observation_contract_sha256": "989d6044211042f2f2394eff2b2d2d8346680c15ecbf36bb1f5bbdfad7305266",
+  "git": {
+   "commit": "82c0585e67d6b6082d5f1bb10c313ddfbbb1dd5d",
+   "branch": "gate19-progress-aware-reminder",
+   "dirty": true,
+   "code_dirty": false,
+   "uncommitted_code": []
+  },
+  "server_argv": [
+   "${RLM_SERVER_PYTHON} scripts/serve_patched.py --model ${ALCHEMIST_MODEL} --port 8081 --max-tokens 4096 --decode-concurrency 1 --prompt-concurrency 1 --prompt-cache-size 10 --prompt-cache-bytes 1GB"
+  ],
+  "requests": 626,
+  "model_segments": [
+   {
+    "from_request": 1,
+    "requested": "${ALCHEMIST_MODEL}",
+    "served": "${ALCHEMIST_MODEL}",
+    "requests": 626
+   }
+  ],
+  "model_stayed_put": true,
+  "distinct_served_models": [
+   "${ALCHEMIST_MODEL}"
+  ]
+ },
+ "queries_sha256": "47ed56ce4e0f0f96b4abfabc5144ec39c5b6cd9bf1031835d09361c8e2fcc91f",
+ "max_depth": 0,
+ "pilot_tasks": [
+  6,
+  12
+ ],
+ "directed": false,
+ "output_mode": "validate_repair",
+ "infer_presentation_spec": true,
+ "output_contract": {
+  "name": "oolong_pairs_lines",
+  "version": "1",
+  "specification": {
+   "empty_allowed": true,
+   "line": "(lower_numeric_id, higher_numeric_id)",
+   "separator": "newline",
+   "duplicates": false,
+   "trailing_newline": true
+  },
+  "binding": {
+   "name": "oolong_pairs_value_equivalence",
+   "version": "1",
+   "specification": {
+    "equivalence": "same set of numeric ID pairs"
+   },
+   "sha256": "1a0e4e160c9a0215e5fb50909c282cf4cf44ec598abb2fd7e384e08eda8f1d6b"
+  },
+  "sha256": "ed1a7a4693dea5bd1444d6b51e652461b09be3475d20ff04e60a39b2877dd1d4"
+ },
+ "claim_scope": "automatic runs test whether the model selects and uses an operation; task_status and the paper-strict score decide task success",
+ "reference_points": {
+  "comparable_to": "scores.paper, and only with floor_f1 beside it",
+  "gpt5_rlm": 0.58,
+  "qwen3_coder_480b_rlm": 0.2311,
+  "gpt5_base": 0.0004,
+  "qwen3_coder_480b_base": 0.0006
+ },
+ "results": [
+  {
+   "task": 6,
+   "id": 15000200,
+   "kind": "sym",
+   "gold_pairs": 8911,
+   "floor_f1": 0.5024,
+   "presentation_spec_inference": {
+    "mode": "model_inferred_question_only_v1",
+    "system_sha256": "72d768c31cb732009a81eb56856a5c18aa7281beeae89d360a8dadce1a812cd1",
+    "request_sha256": "21f90a0bcb2507aa218c60250bc1366b58e7b017ae45316b009864b77652255d",
+    "question_sha256": "a276c952438af8a5446a41b7d7b9ba7c32f7374922670dbab4a2b29ea9ad7b35",
+    "reply_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "reply_chars": 0,
+    "reply_text": "",
+    "served_model": "${ALCHEMIST_MODEL}",
+    "tool_sha256": "10961fae8f357a267e305012572298a7381ce27bf8da40f6d868d5fde9281be3",
+    "declaration_tool": "declare_records",
+    "declaration_arguments_text": "{\"record_separator\": \"newline\", \"prefix\": \"(\", \"suffix\": \")\", \"field_separator\": \",\", \"fields\": [\"integer\", \"integer\"], \"ordering\": \"numeric_ascending\", \"duplicates\": false, \"allow_empty\": false, \"additional_text\": false}",
+    "declaration_arguments_sha256": "fd75873c74678a95280b079076de47e0172d2bc089d33401da8714f19b1c2c35",
+    "declaration_arguments": {
+     "record_separator": "newline",
+     "prefix": "(",
+     "suffix": ")",
+     "field_separator": ",",
+     "fields": [
+      "integer",
+      "integer"
+     ],
+     "ordering": "numeric_ascending",
+     "duplicates": false,
+     "allow_empty": false,
+     "additional_text": false
+    },
+    "inference_channel": "tool_call",
+    "status": "ok",
+    "spec": {
+     "version": 1,
+     "kind": "records",
+     "record_separator": "newline",
+     "prefix": "(",
+     "suffix": ")",
+     "field_separator": ",",
+     "fields": [
+      "integer",
+      "integer"
+     ],
+     "ordering": "numeric_ascending",
+     "duplicates": false,
+     "allow_empty": false,
+     "additional_text": false
+    },
+    "spec_sha256": "419f0d0a4f3121d84b3178485ce1ad4c402616e9a63d67194be4b06fa8279c34",
+    "isolation_attestation": {
+     "run_id": "pairs_pilot_1787018382_t06_format_inference",
+     "policy": "mlx_prompt_cache_reset_v1",
+     "epoch": 81,
+     "before": {
+      "by_type": {
+       "assistant": {
+        "n_bytes": 1836154880,
+        "n_sequences": 3
+       },
+       "system": {
+        "n_bytes": 133955584,
+        "n_sequences": 2
+       },
+       "user": {
+        "n_bytes": 674988032,
+        "n_sequences": 2
+       }
+      },
+      "bytes": 2645098496,
+      "sequences": 7,
+      "state_machines": 1
+     },
+     "after": {
+      "by_type": {
+       "assistant": {
+        "n_bytes": 0,
+        "n_sequences": 0
+       },
+       "system": {
+        "n_bytes": 0,
+        "n_sequences": 0
+       },
+       "user": {
+        "n_bytes": 0,
+        "n_sequences": 0
+       }
+      },
+      "bytes": 0,
+      "sequences": 0,
+      "state_machines": 0
+     },
+     "verified": true
+    }
+   },
+   "episode_run_id": "pairs_pilot_1787018382_t06",
+   "scores_raw": {
+    "paper": {
+     "f1": 0.0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "predicted": 0,
+     "truth": 8911,
+     "hit": 0
+    },
+    "repl": {
+     "f1": 0.7417,
+     "precision": 0.8663,
+     "recall": 0.6484,
+     "predicted": 6670,
+     "truth": 8911,
+     "hit": 5778
+    },
+    "loose": {
+     "f1": 0.7417,
+     "precision": 0.8663,
+     "recall": 0.6484,
+     "predicted": 6670,
+     "truth": 8911,
+     "hit": 5778
+    }
+   },
+   "paper_raw": {
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "predicted": 0,
+    "truth": 8911,
+    "hit": 0
+   },
+   "content": {
+    "input": "answer_value",
+    "scorer_sha256": "3cd13122d149a1c56b38490d615760e18b65cfbff687269a4e4ff7d37661d6d0",
+    "metrics": {
+     "f1": 0.7417,
+     "precision": 0.8663,
+     "recall": 0.6484,
+     "predicted": 6670,
+     "truth": 8911,
+     "hit": 5778
+    }
+   },
+   "contract_validation": {
+    "valid": true,
+    "errors": [],
+    "structural_valid": true,
+    "binding": {
+     "valid": true,
+     "errors": []
+    }
+   },
+   "scores_final": {
+    "paper": {
+     "f1": 0.7417,
+     "precision": 0.8663,
+     "recall": 0.6484,
+     "predicted": 6670,
+     "truth": 8911,
+     "hit": 5778
+    },
+    "repl": {
+     "f1": 0.7417,
+     "precision": 0.8663,
+     "recall": 0.6484,
+     "predicted": 6670,
+     "truth": 8911,
+     "hit": 5778
+    },
+    "loose": {
+     "f1": 0.7417,
+     "precision": 0.8663,
+     "recall": 0.6484,
+     "predicted": 6670,
+     "truth": 8911,
+     "hit": 5778
+    }
+   },
+   "contract_validated": {
+    "valid": true,
+    "scores_final": {
+     "paper": {
+      "f1": 0.7417,
+      "precision": 0.8663,
+      "recall": 0.6484,
+      "predicted": 6670,
+      "truth": 8911,
+      "hit": 5778
+     },
+     "repl": {
+      "f1": 0.7417,
+      "precision": 0.8663,
+      "recall": 0.6484,
+      "predicted": 6670,
+      "truth": 8911,
+      "hit": 5778
+     },
+     "loose": {
+      "f1": 0.7417,
+      "precision": 0.8663,
+      "recall": 0.6484,
+      "predicted": 6670,
+      "truth": 8911,
+      "hit": 5778
+     }
+    }
+   },
+   "output_repair": {
+    "attempted": true,
+    "promoted": true,
+    "initial_validation": {
+     "valid": false,
+     "errors": [],
+     "issues": [
+      {
+       "code": "invalid_pair_line",
+       "message": "each line must contain only (lower_numeric_id, higher_numeric_id); quoted excerpts are received invalid lines, not desired output",
+       "count": 1,
+       "examples": [
+        "line 1: '[[\"12646\", \"13973\"], [\"12646\", \"15245\"], [\"12646\", \"15587\"], [\"12646\", \"15840\"], [\"12646\", \"16303\"], [\"12646\", \"16359\"]…'"
+       ]
+      }
+     ],
+     "structural_valid": false,
+     "binding": {
+      "valid": false,
+      "errors": [
+       "structural validation failed before equivalence"
+      ],
+      "skipped": true
+     }
+    },
+    "attempts": [
+     {
+      "attempt": 1,
+      "candidate_committed": false,
+      "clean_progress": true,
+      "clean_build_turn": 1,
+      "source": "stdout_draft",
+      "draft_sha256": "4865d46c2f394af21e5637f1cd95ddd2fed53ba0e635f3b7b23715b461eca03e",
+      "draft_chars": 273,
+      "draft_validation": {
+       "valid": false,
+       "errors": [],
+       "issues": [
+        {
+         "code": "invalid_pair_line",
+         "message": "each line must contain only (lower_numeric_id, higher_numeric_id); quoted excerpts are received invalid lines, not desired output",
+         "count": 3,
+         "examples": [
+          "line 1: \"Current PRESENTATION_VALUE: <class 'list'>\"",
+          "line 2: 'Length: 6670'",
+          "line 3: \"Current format: [['12646', '13973'], ['12646', '15245'], ['12646', '15587'], ['12646', '15840'], ['12646', '16303'], ['…\""
+         ]
+        }
+       ],
+       "structural_valid": false,
+       "binding": {
+        "valid": false,
+        "errors": [
+         "structural validation failed before equivalence"
+        ],
+        "skipped": true
+       }
+      },
+      "draft_persisted": true
+     },
+     {
+      "attempt": 2,
+      "candidate_committed": true,
+      "source": "submit",
+      "candidate_sha256": "d397fa72b947fc77ca92a5fa3d6616fa8ac3059e64521db0be58a7df24c149b4",
+      "candidate_validation": {
+       "valid": true,
+       "errors": [],
+       "structural_valid": true,
+       "binding": {
+        "valid": true,
+        "errors": []
+       }
+      }
+     }
+    ],
+    "inferred_presentation_spec": {
+     "version": 1,
+     "kind": "records",
+     "record_separator": "newline",
+     "prefix": "(",
+     "suffix": ")",
+     "field_separator": ",",
+     "fields": [
+      "integer",
+      "integer"
+     ],
+     "ordering": "numeric_ascending",
+     "duplicates": false,
+     "allow_empty": false,
+     "additional_text": false
+    },
+    "source_variable": "pairs",
+    "draft_sha256": "4865d46c2f394af21e5637f1cd95ddd2fed53ba0e635f3b7b23715b461eca03e",
+    "draft_validation": {
+     "valid": false,
+     "errors": [],
+     "issues": [
+      {
+       "code": "invalid_pair_line",
+       "message": "each line must contain only (lower_numeric_id, higher_numeric_id); quoted excerpts are received invalid lines, not desired output",
+       "count": 3,
+       "examples": [
+        "line 1: \"Current PRESENTATION_VALUE: <class 'list'>\"",
+        "line 2: 'Length: 6670'",
+        "line 3: \"Current format: [['12646', '13973'], ['12646', '15245'], ['12646', '15587'], ['12646', '15840'], ['12646', '16303'], ['…\""
+       ]
+      }
+     ],
+     "structural_valid": false,
+     "binding": {
+      "valid": false,
+      "errors": [
+       "structural validation failed before equivalence"
+      ],
+      "skipped": true
+     }
+    },
+    "clean_build_turns": 1,
+    "candidate_validation": {
+     "valid": true,
+     "errors": [],
+     "structural_valid": true,
+     "binding": {
+      "valid": true,
+      "errors": []
+     }
+    },
+    "candidate_valid": true
+   },
+   "presentation_checks": [],
+   "presentation_renders": [],
+   "content_f1_ignoring_format": {
+    "f1": 0.7417,
+    "precision": 0.8663,
+    "recall": 0.6484,
+    "predicted": 6670,
+    "truth": 8911,
+    "hit": 5778
+   },
+   "scores": {
+    "paper": {
+     "f1": 0.0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "predicted": 0,
+     "truth": 8911,
+     "hit": 0
+    },
+    "repl": {
+     "f1": 0.7417,
+     "precision": 0.8663,
+     "recall": 0.6484,
+     "predicted": 6670,
+     "truth": 8911,
+     "hit": 5778
+    },
+    "loose": {
+     "f1": 0.7417,
+     "precision": 0.8663,
+     "recall": 0.6484,
+     "predicted": 6670,
+     "truth": 8911,
+     "hit": 5778
+    }
+   },
+   "execution_status": "completed",
+   "task_status": "invalid_format",
+   "operations": [],
+   "semantic_cache_hits": 0,
+   "sweeps": [],
+   "semantic_status": null,
+   "semantic_scope": null,
+   "context_coverage_complete": null,
+   "artifact_valid": null,
+   "stop_reason": "submitted",
+   "turns": 15,
+   "subcalls": 0,
+   "visible_transcript_sha256": "4531e2ec950a70b9d1e67ea4c7fa83a37455a9ceff822a5441718e9eb411a289",
+   "visible_request_sha256s": [
+    {
+     "turn": 1,
+     "channel": "reasoning",
+     "sha256": "6e59ad15dd788f54fd96db9c66de8956425e102cb3e279ce7cfdb33e2d739af2",
+     "messages": 2,
+     "max_tokens": 4096
+    },
+    {
+     "turn": 2,
+     "channel": "reasoning",
+     "sha256": "1f2e1f42b1d1997ae3dba9891c319a77f629eb35e5618ed6bc7cafe0839ca4bc",
+     "messages": 4,
+     "max_tokens": 4096
+    },
+    {
+     "turn": 3,
+     "channel": "reasoning",
+     "sha256": "823727f7f1714b1f1f6124c1c411690c3d56bec24cdf954259075667758956b5",
+     "messages": 6,
+     "max_tokens": 4096
+    },
+    {
+     "turn": 4,
+     "channel": "reasoning",
+     "sha256": "853c79a498cb391fd86509119cd70ba0f57fde1475021f4ee671ef3787633cc1",
+     "messages": 8,
+     "max_tokens": 4096
+    },
+    {
+     "turn": 5,
+     "channel": "reasoning",
+     "sha256": "a3b93cce6971c3e2b649fc234125cc1dfe0700db61c539590aefb0957280afdf",
+     "messages": 10,
+     "max_tokens": 4096
+    },
+    {
+     "turn": 6,
+     "channel": "reasoning",
+     "sha256": "48cf436fcb04bbaa1a5929eb95cffe2e4e2135049bce4d78bbdd56044b90a96b",
+     "messages": 12,
+     "max_tokens": 4096
+    },
+    {
+     "turn": 7,
+     "channel": "reasoning",
+     "sha256": "cd1568d341f25fd1e40f895db9a3c37bf098d95d78f726f731d8b2b43df9c084",
+     "messages": 14,
+     "max_tokens": 4096
+    },
+    {
+     "turn": 8,
+     "channel": "reasoning",
+     "sha256": "50daf93cfe914d6893ff14c283b78993f01ad2cf1ba5c19c6db1ace0229cedb1",
+     "messages": 16,
+     "max_tokens": 4096
+    },
+    {
+     "turn": 9,
+     "channel": "reasoning",
+     "sha256": "0756abed30c58541243fa73161b6cf5631a4c52979fa993c4afe03bd031a7e1c",
+     "messages": 18,
+     "max_tokens": 4096
+    },
+    {
+     "turn": 10,
+     "channel": "reasoning",
+     "sha256": "c208f71a2f554086331ed7b3b2b4cbb7d4febaa9335b474d85046e32c4eefc0b",
+     "messages": 20,
+     "max_tokens": 4096
+    },
+    {
+     "turn": 11,
+     "channel": "reasoning",
+     "sha256": "c2baa91020ba219f0623eaf7a325e27acde4b05a93a7054c99e56a9550395704",
+     "messages": 22,
+     "max_tokens": 4096
+    },
+    {
+     "turn": 12,
+     "channel": "reasoning",
+     "sha256": "9edcb49891989f3148740c6ea1da6de092226a2e9a6ef66113e120a179571d10",
+     "messages": 24,
+     "max_tokens": 4096
+    },
+    {
+     "turn": 13,
+     "channel": "reasoning",
+     "sha256": "3c134d2301a9fffc0ccd3530ba963e3ff886d837d42e5490744788f77c7c240f",
+     "messages": 26,
+     "max_tokens": 4096
+    },
+    {
+     "turn": 14,
+     "channel": "presentation",
+     "sha256": "ab2e5e33e9ff52bd57734816c74a50661cd80c08502430973124b2db1a9c06c2",
+     "messages": 29,
+     "max_tokens": 4096
+    },
+    {
+     "turn": 15,
+     "channel": "presentation",
+     "sha256": "c3eb502713cc81979a2f1fb2db8e51c8737f0bdaaadab41b4d3d1a8bedea1538",
+     "messages": 32,
+     "max_tokens": 1024
+    }
+   ],
+   "isolation_attestation": {
+    "run_id": "pairs_pilot_1787018382_t06",
+    "policy": "mlx_prompt_cache_reset_v1",
+    "epoch": 82,
+    "before": {
+     "by_type": {
+      "assistant": {
+       "n_bytes": 173637632,
+       "n_sequences": 2
+      },
+      "system": {
+       "n_bytes": 77987840,
+       "n_sequences": 1
+      },
+      "user": {
+       "n_bytes": 84508672,
+       "n_sequences": 1
+      }
+     },
+     "bytes": 336134144,
+     "sequences": 4,
+     "state_machines": 1
+    },
+    "after": {
+     "by_type": {
+      "assistant": {
+       "n_bytes": 0,
+       "n_sequences": 0
+      },
+      "system": {
+       "n_bytes": 0,
+       "n_sequences": 0
+      },
+      "user": {
+       "n_bytes": 0,
+       "n_sequences": 0
+      }
+     },
+     "bytes": 0,
+     "sequences": 0,
+     "state_machines": 0
+    },
+    "verified": true
+   },
+   "answer_chars": 100050,
+   "answer_head": "(12646, 13973)\n(12646, 15245)\n(12646, 15587)\n(12646, 15840)\n(12646, 16303)\n(12646, 16359)\n(12646, 16542)\n(12646, 17200)\n(12646, 19125)\n(12646, 19341)\n(12646, 20645)\n(12646, 22522)\n(12646, 22693)\n(1264",
+   "f1": 0.0,
+   "precision": 0.0,
+   "recall": 0.0,
+   "predicted": 0,
+   "truth": 8911,
+   "hit": 0,
+   "seconds": 143.8
+  },
+  {
+   "task": 12,
+   "id": 15000200,
+   "kind": "asym",
+   "gold_pairs": 1505,
+   "floor_f1": 0.1072,
+   "presentation_spec_inference": {
+    "mode": "model_inferred_question_only_v1",
+    "system_sha256": "72d768c31cb732009a81eb56856a5c18aa7281beeae89d360a8dadce1a812cd1",
+    "request_sha256": "9a0e8180538ac01b3c362fd1e5f5dc90325a7fe36420a5adcc03641ea277b4b3",
+    "question_sha256": "91cadf430021f8bfe6884d71d353f0f2a950671fe2abb90f1083b5aa53b54f4f",
+    "reply_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "reply_chars": 0,
+    "reply_text": "",
+    "served_model": "${ALCHEMIST_MODEL}",
+    "tool_sha256": "10961fae8f357a267e305012572298a7381ce27bf8da40f6d868d5fde9281be3",
+    "declaration_tool": "declare_records",
+    "declaration_arguments_text": "{\"record_separator\": \"newline\", \"prefix\": \"(\", \"suffix\": \")\", \"field_separator\": \",\", \"fields\": [\"string\", \"string\"], \"ordering\": \"numeric_ascending\", \"duplicates\": false, \"allow_empty\": false, \"additional_text\": false}",
+    "declaration_arguments_sha256": "8af7ff841347a5bb9c37ee78a93ce8435c3f6c11416aa1d6770016a105416133",
+    "declaration_arguments": {
+     "record_separator": "newline",
+     "prefix": "(",
+     "suffix": ")",
+     "field_separator": ",",
+     "fields": [
+      "string",
+      "string"
+     ],
+     "ordering": "numeric_ascending",
+     "duplicates": false,
+     "allow_empty": false,
+     "additional_text": false
+    },
+    "inference_channel": "tool_call",
+    "status": "ok",
+    "spec": {
+     "version": 1,
+     "kind": "records",
+     "record_separator": "newline",
+     "prefix": "(",
+     "suffix": ")",
+     "field_separator": ",",
+     "fields": [
+      "string",
+      "string"
+     ],
+     "ordering": "numeric_ascending",
+     "duplicates": false,
+     "allow_empty": false,
+     "additional_text": false
+    },
+    "spec_sha256": "2d8190903b0741fc4f0fe5e6861cb62feb94b86f11e628696e65a989f957cf74",
+    "isolation_attestation": {
+     "run_id": "pairs_pilot_1787018382_t12_format_inference",
+     "policy": "mlx_prompt_cache_reset_v1",
+     "epoch": 83,
+     "before": {
+      "by_type": {
+       "assistant": {
+        "n_bytes": 2238676992,
+        "n_sequences": 2
+       },
+       "system": {
+        "n_bytes": 0,
+        "n_sequences": 0
+       },
+       "user": {
+        "n_bytes": 1113096192,
+        "n_sequences": 1
+       }
+      },
+      "bytes": 3351773184,
+      "sequences": 3,
+      "state_machines": 1
+     },
+     "after": {
+      "by_type": {
+       "assistant": {
+        "n_bytes": 0,
+        "n_sequences": 0
+       },
+       "system": {
+        "n_bytes": 0,
+        "n_sequences": 0
+       },
+       "user": {
+        "n_bytes": 0,
+        "n_sequences": 0
+       }
+      },
+      "bytes": 0,
+      "sequences": 0,
+      "state_machines": 0
+     },
+     "verified": true
+    }
+   },
+   "episode_run_id": "pairs_pilot_1787018382_t12",
+   "scores_raw": {
+    "paper": {
+     "f1": 0.0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "predicted": 0,
+     "truth": 1505,
+     "hit": 0
+    },
+    "repl": {
+     "f1": 0.0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "predicted": 0,
+     "truth": 1505,
+     "hit": 0
+    },
+    "loose": {
+     "f1": 0.0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "predicted": 0,
+     "truth": 1505,
+     "hit": 0
+    }
+   },
+   "paper_raw": {
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "predicted": 0,
+    "truth": 1505,
+    "hit": 0
+   },
+   "content": null,
+   "contract_validation": null,
+   "scores_final": {
+    "paper": {
+     "f1": 0.0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "predicted": 0,
+     "truth": 1505,
+     "hit": 0
+    },
+    "repl": {
+     "f1": 0.0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "predicted": 0,
+     "truth": 1505,
+     "hit": 0
+    },
+    "loose": {
+     "f1": 0.0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "predicted": 0,
+     "truth": 1505,
+     "hit": 0
+    }
+   },
+   "contract_validated": null,
+   "output_repair": null,
+   "presentation_checks": [],
+   "presentation_renders": [],
+   "content_f1_ignoring_format": {
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "predicted": 0,
+    "truth": 1505,
+    "hit": 0
+   },
+   "scores": {
+    "paper": {
+     "f1": 0.0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "predicted": 0,
+     "truth": 1505,
+     "hit": 0
+    },
+    "repl": {
+     "f1": 0.0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "predicted": 0,
+     "truth": 1505,
+     "hit": 0
+    },
+    "loose": {
+     "f1": 0.0,
+     "precision": 0.0,
+     "recall": 0.0,
+     "predicted": 0,
+     "truth": 1505,
+     "hit": 0
+    }
+   },
+   "execution_status": "completed",
+   "task_status": "failed",
+   "operations": [],
+   "semantic_cache_hits": 0,
+   "sweeps": [],
+   "semantic_status": null,
+   "semantic_scope": null,
+   "context_coverage_complete": null,
+   "artifact_valid": null,
+   "stop_reason": "forced_final:max_subcalls:truncated",
+   "turns": 9,
+   "subcalls": 600,
+   "visible_transcript_sha256": "605d41a89d3a2164755f3a1366ac2cd87e6f6fcbd10872ba8df112743f446872",
+   "visible_request_sha256s": [
+    {
+     "turn": 1,
+     "channel": "reasoning",
+     "sha256": "59eeb81785c0f42460bfd608394f3ba441d80b8da4d251a2fa80732a91c32d9f",
+     "messages": 2,
+     "max_tokens": 4096
+    },
+    {
+     "turn": 2,
+     "channel": "reasoning",
+     "sha256": "7e9e5a7a4e09988583ee8429ee56b973b337a14fe8ad32983cacc70ed59e221c",
+     "messages": 4,
+     "max_tokens": 4096
+    },
+    {
+     "turn": 3,
+     "channel": "reasoning",
+     "sha256": "f8f6a9465fdeacf288d0ed686e52f49b208e19fd7ab63972730352fa7eb1def3",
+     "messages": 6,
+     "max_tokens": 4096
+    },
+    {
+     "turn": 4,
+     "channel": "reasoning",
+     "sha256": "8a47ff11c9c4806ed5ce951896afb84fc2ff50d757a3e27eb2fb1b881912b55b",
+     "messages": 8,
+     "max_tokens": 4096
+    },
+    {
+     "turn": 5,
+     "channel": "reasoning",
+     "sha256": "a2c8e2b96f87ca7ac16f13f43507cfde747c4108ab0b51b1ff3480e2af66ef29",
+     "messages": 10,
+     "max_tokens": 4096
+    },
+    {
+     "turn": 6,
+     "channel": "reasoning",
+     "sha256": "617bfb2da5c6a16907e99d2329b66679686b31f4690d03dde123af06776921b7",
+     "messages": 12,
+     "max_tokens": 4096
+    },
+    {
+     "turn": 7,
+     "channel": "reasoning",
+     "sha256": "269d4a11ad84d2b383e889b8a3adff1f927be94671256a2439dabe46a53c9452",
+     "messages": 14,
+     "max_tokens": 4096
+    },
+    {
+     "turn": 8,
+     "channel": "reasoning",
+     "sha256": "449aefd690654f32455fffd07d6ba1e8660beacbd7688f3976ad7805dc5066ad",
+     "messages": 17,
+     "max_tokens": 4096
+    },
+    {
+     "turn": 9,
+     "channel": "reasoning",
+     "sha256": "baef8e85cdf918217418d8e4bd1e0cb85627a2c0de1b4206b57b0bb8fc24d9ee",
+     "messages": 20,
+     "max_tokens": 4096
+    }
+   ],
+   "isolation_attestation": {
+    "run_id": "pairs_pilot_1787018382_t12",
+    "policy": "mlx_prompt_cache_reset_v1",
+    "epoch": 84,
+    "before": {
+     "by_type": {
+      "assistant": {
+       "n_bytes": 174882816,
+       "n_sequences": 2
+      },
+      "system": {
+       "n_bytes": 77987840,
+       "n_sequences": 1
+      },
+      "user": {
+       "n_bytes": 85131264,
+       "n_sequences": 1
+      }
+     },
+     "bytes": 338001920,
+     "sequences": 4,
+     "state_machines": 1
+    },
+    "after": {
+     "by_type": {
+      "assistant": {
+       "n_bytes": 0,
+       "n_sequences": 0
+      },
+      "system": {
+       "n_bytes": 0,
+       "n_sequences": 0
+      },
+      "user": {
+       "n_bytes": 0,
+       "n_sequences": 0
+      }
+     },
+     "bytes": 0,
+     "sequences": 0,
+     "state_machines": 0
+    },
+    "verified": true
+   },
+   "answer_chars": 0,
+   "answer_head": "",
+   "f1": 0.0,
+   "precision": 0.0,
+   "recall": 0.0,
+   "predicted": 0,
+   "truth": 1505,
+   "hit": 0,
+   "seconds": 180.3
+  }
+ ]
+}

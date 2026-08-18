@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use Alchemist-RLM Harness, please cite this repository and the RLM paper."
+title: "Alchemist-RLM Harness"
+type: software
+authors:
+  - family-names: "Galvis C"
+    given-names: "Angel"
+version: 0.1.0
+date-released: 2026-08-18
+repository-code: "https://github.com/angelgalvisc/alchemist-rlm"
+url: "https://github.com/angelgalvisc/alchemist-rlm"
+license: MIT
+references:
+  - type: article
+    title: "Recursive Language Models"
+    authors:
+      - family-names: "Zhang"
+        given-names: "Alex"
+      - family-names: "Kraska"
+        given-names: "Tim"
+      - family-names: "Khattab"
+        given-names: "Omar"
+    year: 2025
+    url: "https://arxiv.org/abs/2512.24601"

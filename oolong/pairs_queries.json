@@ -1,0 +1,470 @@
+{
+ "source": "arXiv:2512.24601 (Recursive Language Models), Appendix D.1 OOLONG-Pairs",
+ "extracted_from": "arxiv.org/pdf/2512.24601, pages 27-30",
+ "note": "Queries verbatim. `spec` is our transcription of each query's English into a machine-checkable predicate, so the gold answer is DERIVED from the dataset's own labels and never hand-written. A spec that disagrees with its query is the one failure this file can hide, so every spec is asserted against the query text it sits beside. The compact official binding below contains only counts and one-way digests; it cannot reveal an answer to the model.",
+ "context_rung": "32768",
+ "pairing": "all 20 tasks use the same rung-32768 trec_coarse context_window_id=0",
+ "official_binding": {
+  "source": "https://huggingface.co/datasets/mit-oasys/oolong-pairs/blob/main/data/oolong-pairs-32768.json",
+  "source_file_sha256": "22842670c332bd357eabcacde621e1807d0d8c832bd90b3f29eb4b8578f61cb6",
+  "questions_sha256": "30431158eff86896998f5177344a2c0ae323e39698d7d3556f2198bf2a8efe39",
+  "context_window_id": 0,
+  "context_text_sha256": "4d761ff162fc69b1f1a182a46bfb56b5704f1e8d622b4dc645ed5ead865ce619",
+  "context_with_labels_sha256": "005ba514b8c60b4dddc6e5ba95020a451ec7cc30fcd879d4c69d8ae08527f5d5",
+  "gold": [
+   [1, 8001, "539c8f548de5ee4378e584b3545c816795c908aa6a957ab6bada331ed832652e"],
+   [2, 5356, "88cc16aa3d3cd3a5fc88bde5672b5be18c0bf621ed78de5fb8cd89b1bddd8da2"],
+   [3, 10440, "b7b134f04603aa5d547869baa9b28715e86379197fcb3e619777706c150c5502"],
+   [4, 3160, "7c3e8e62dd50068bf057f8cf08b0c6a8490b160f93951253346ccd25d6b05502"],
+   [5, 2485, "db6d356bc03e38d1d3aadaa2d409759af6769e174806bcdfad48ea2ef9deba5e"],
+   [6, 8911, "219f2705d025f12ae51675f79212f62154a9d1fd72c2209044c85efc52a84281"],
+   [7, 4656, "10612876f95cbb47c810d568a978f418d78aac4522297c0050db27ebfc271a26"],
+   [8, 8128, "136e35d69b6d0334cac91b197d1f610ec2c67ea3321dba2c76f00e0a9f7649b2"],
+   [9, 1830, "d90aa6fa357a48ad877c1b91ebd948743a6bb348c6b52719e65aa4e9d0ca722a"],
+   [10, 1770, "643d2f9a25de321d8bed9b9e5693fe4a79014e43695b0a206429f83ad99d613f"],
+   [11, 689, "212f39559079d4546379394b815cf58077770c6b0c14a35a3f52e032c4d2e0ef"],
+   [12, 1505, "bee4fb3499722309d45eef378aac499557a41f7c83424f148d8187a19d668e7e"],
+   [13, 1524, "3c690670810ee54bc1ccee4dc3a25e6b1a9b497f099d3cc7a63c78c28396f930"],
+   [14, 1137, "a71b561eada9e99b11cb453c1d16345cfd9d0f17acbdf8037f028fc50082502e"],
+   [15, 1112, "4649bc0d5ba8a596249e19ce5cd451d2232d7acb6687f52b27674326f3ba9cdd"],
+   [16, 209, "0f39787b056cca2befd45633c8c82a944b3fc1ce807c5d08c02c406dcc9d529d"],
+   [17, 2330, "b17fe976217ad0c8ad661724668b1e09ea96a75d75eba6fcc07a4becc9f3a4b0"],
+   [18, 980, "53b12f5d824bce245d81070821683cd1a7ea5657fb68afc9d5d068e25de991b6"],
+   [19, 60, "23de9ddb0a54385358ee8e4636961ca75bc3e7470a42146fb368bc2db8b5da73"],
+   [20, 314, "9a25babbff64e585ca5ab495b25044dab280456694e78c27fdd9ba131723e49e"]
+  ]
+ },
+ "tasks": [
+  {
+   "task": 1,
+   "query": "In the above data, list all pairs of user IDs (no duplicate pairs, list lower ID first) where both users have at least one instance with a numeric value or location. Each of the questions can be labelled as one of the labels (the data does not provide the labels, you need to figure out the label from the semantics of the question): description and abstract concept, entity, human being, numeric value, location, abbreviation. In your answer, list all pairs in the format (user_id_1, user_id_2), separated by newlines.",
+   "spec": {
+    "kind": "sym",
+    "any": [
+     "numeric value",
+     "location"
+    ],
+    "date_rule": null
+   }
+  },
+  {
+   "task": 2,
+   "query": "In the above data, list all pairs of user IDs (no duplicate pairs, list lower ID first) where both users have at least one instance with an entity or human being. Each of the questions can be labelled as one of the labels (the data does not provide the labels, you need to figure out the label from the semantics of the question): description and abstract concept, entity, human being, numeric value, location, abbreviation. In your answer, list all pairs in the format (user_id_1, user_id_2), separated by newlines.",
+   "spec": {
+    "kind": "sym",
+    "any": [
+     "entity",
+     "human being"
+    ],
+    "date_rule": null
+   }
+  },
+  {
+   "task": 3,
+   "query": "In the above data, list all pairs of user IDs (no duplicate pairs, list lower ID first) where both users have at least one instance with a description and abstract concept or abbreviation. Each of the questions can be labelled as one of the labels (the data does not provide the labels, you need to figure out the label from the semantics of the question): description and abstract concept, entity, human being, numeric value, location, abbreviation. In your answer, list all pairs in the format (user_id_1, user_id_2), separated by newlines.",
+   "spec": {
+    "kind": "sym",
+    "any": [
+     "description and abstract concept",
+     "abbreviation"
+    ],
+    "date_rule": null
+   }
+  },
+  {
+   "task": 4,
+   "query": "In the above data, list all pairs of user IDs (no duplicate pairs, list lower ID first) where both users have at least one instance with a human being or location, and all instances that are a human being for both users must be after January 6, 2023. Each of the questions can be labelled as one of the labels (the data does not provide the labels, you need to figure out the label from the semantics of the question): description and abstract concept, entity, human being, numeric value, location, abbreviation. In your answer, list all pairs in the format (user_id_1, user_id_2), separated by newlines.",
+   "spec": {
+    "kind": "sym",
+    "any": [
+     "human being",
+     "location"
+    ],
+    "date_rule": [
+     "human being",
+     "after",
+     "2023-01-06"
+    ]
+   }
+  },
+  {
+   "task": 5,
+   "query": "In the above data, list all pairs of user IDs (no duplicate pairs, list lower ID first) where both users have at least one instance with an entity or numeric value, and all instances that are an entity for both users must be before March 15, 2023. Each of the questions can be labelled as one of the labels (the data does not provide the labels, you need to figure out the label from the semantics of the question): description and abstract concept, entity, human being, numeric value, location, abbreviation. In your answer, list all pairs in the format (user_id_1, user_id_2), separated by newlines.",
+   "spec": {
+    "kind": "sym",
+    "any": [
+     "entity",
+     "numeric value"
+    ],
+    "date_rule": [
+     "entity",
+     "before",
+     "2023-03-15"
+    ]
+   }
+  },
+  {
+   "task": 6,
+   "query": "In the above data, list all pairs of user IDs (no duplicate pairs, list lower ID first) where both users have at least one instance with a location or abbreviation. Each of the questions can be labelled as one of the labels (the data does not provide the labels, you need to figure out the label from the semantics of the question): description and abstract concept, entity, human being, numeric value, location, abbreviation. In your answer, list all pairs in the format (user_id_1, user_id_2), separated by newlines.",
+   "spec": {
+    "kind": "sym",
+    "any": [
+     "location",
+     "abbreviation"
+    ],
+    "date_rule": null
+   }
+  },
+  {
+   "task": 7,
+   "query": "In the above data, list all pairs of user IDs (no duplicate pairs, list lower ID first) where both users have at least one instance with a description and abstract concept or numeric value, and all instances that are a numeric value for both users must be after February 1, 2023. Each of the questions can be labelled as one of the labels (the data does not provide the labels, you need to figure out the label from the semantics of the question): description and abstract concept, entity, human being, numeric value, location, abbreviation. In your answer, list all pairs in the format (user_id_1, user_id_2), separated by newlines.",
+   "spec": {
+    "kind": "sym",
+    "any": [
+     "description and abstract concept",
+     "numeric value"
+    ],
+    "date_rule": [
+     "numeric value",
+     "after",
+     "2023-02-01"
+    ]
+   }
+  },
+  {
+   "task": 8,
+   "query": "In the above data, list all pairs of user IDs (no duplicate pairs, list lower ID first) where both users have at least one instance with a human being or description and abstract concept. Each of the questions can be labelled as one of the labels (the data does not provide the labels, you need to figure out the label from the semantics of the question): description and abstract concept, entity, human being, numeric value, location, abbreviation. In your answer, list all pairs in the format (user_id_1, user_id_2), separated by newlines.",
+   "spec": {
+    "kind": "sym",
+    "any": [
+     "human being",
+     "description and abstract concept"
+    ],
+    "date_rule": null
+   }
+  },
+  {
+   "task": 9,
+   "query": "In the above data, list all pairs of user IDs (no duplicate pairs, list lower ID first) where both users have at least one instance with an entity or location, and all instances that are a location for both users must be after April 10, 2023. Each of the questions can be labelled as one of the labels (the data does not provide the labels, you need to figure out the label from the semantics of the question): description and abstract concept, entity, human being, numeric value, location, abbreviation. In your answer, list all pairs in the format (user_id_1, user_id_2), separated by newlines.",
+   "spec": {
+    "kind": "sym",
+    "any": [
+     "entity",
+     "location"
+    ],
+    "date_rule": [
+     "location",
+     "after",
+     "2023-04-10"
+    ]
+   }
+  },
+  {
+   "task": 10,
+   "query": "In the above data, list all pairs of user IDs (no duplicate pairs, list lower ID first) where both users have at least one instance with a numeric value or abbreviation, and all instances that are an abbreviation for both users must be before May 20, 2023. Each of the questions can be labelled as one of the labels (the data does not provide the labels, you need to figure out the label from the semantics of the question): description and abstract concept, entity, human being, numeric value, location, abbreviation. In your answer, list all pairs in the format (user_id_1, user_id_2), separated by newlines.",
+   "spec": {
+    "kind": "sym",
+    "any": [
+     "numeric value",
+     "abbreviation"
+    ],
+    "date_rule": [
+     "abbreviation",
+     "before",
+     "2023-05-20"
+    ]
+   }
+  },
+  {
+   "task": 11,
+   "query": "In the above data, list all pairs of user IDs (no duplicate pairs, list lower ID first) such that one user has at least one instance with entity and one with abbreviation, and the other user has exactly one instance with entity. Each of the questions can be labelled as one of the labels (the data does not provide the labels, you need to figure out the label from the semantics of the question): description and abstract concept, entity, human being, numeric value, location, abbreviation. In your answer, list all pairs in the format (user_id_1, user_id_2), separated by newlines.",
+   "spec": {
+    "kind": "asym",
+    "a": [
+     [
+      "entity",
+      ">=",
+      1
+     ],
+     [
+      "abbreviation",
+      ">=",
+      1
+     ]
+    ],
+    "b": [
+     [
+      "entity",
+      "==",
+      1
+     ]
+    ]
+   }
+  },
+  {
+   "task": 12,
+   "query": "In the above data, list all pairs of user IDs (no duplicate pairs, list lower ID first) such that one user has at least two instances with numeric value, and the other user has at least one instance with location and at least one instance with human being. Each of the questions can be labelled as one of the labels (the data does not provide the labels, you need to figure out the label from the semantics of the question): description and abstract concept, entity, human being, numeric value, location, abbreviation. In your answer, list all pairs in the format (user_id_1, user_id_2), separated by newlines.",
+   "spec": {
+    "kind": "asym",
+    "a": [
+     [
+      "numeric value",
+      ">=",
+      2
+     ]
+    ],
+    "b": [
+     [
+      "location",
+      ">=",
+      1
+     ],
+     [
+      "human being",
+      ">=",
+      1
+     ]
+    ]
+   }
+  },
+  {
+   "task": 13,
+   "query": "In the above data, list all pairs of user IDs (no duplicate pairs, list lower ID first) such that one user has exactly one instance with description and abstract concept, and the other user has at least one instance with abbreviation and at least one instance with entity. Each of the questions can be labelled as one of the labels (the data does not provide the labels, you need to figure out the label from the semantics of the question): description and abstract concept, entity, human being, numeric value, location, abbreviation. In your answer, list all pairs in the format (user_id_1, user_id_2), separated by newlines.",
+   "spec": {
+    "kind": "asym",
+    "a": [
+     [
+      "description and abstract concept",
+      "==",
+      1
+     ]
+    ],
+    "b": [
+     [
+      "abbreviation",
+      ">=",
+      1
+     ],
+     [
+      "entity",
+      ">=",
+      1
+     ]
+    ]
+   }
+  },
+  {
+   "task": 14,
+   "query": "In the above data, list all pairs of user IDs (no duplicate pairs, list lower ID first) such that one user has at least one instance with human being and at least one instance with numeric value, and the other user has exactly two instances with location. Each of the questions can be labelled as one of the labels (the data does not provide the labels, you need to figure out the label from the semantics of the question): description and abstract concept, entity, human being, numeric value, location, abbreviation. In your answer, list all pairs in the format (user_id_1, user_id_2), separated by newlines.",
+   "spec": {
+    "kind": "asym",
+    "a": [
+     [
+      "human being",
+      ">=",
+      1
+     ],
+     [
+      "numeric value",
+      ">=",
+      1
+     ]
+    ],
+    "b": [
+     [
+      "location",
+      "==",
+      2
+     ]
+    ]
+   }
+  },
+  {
+   "task": 15,
+   "query": "In the above data, list all pairs of user IDs (no duplicate pairs, list lower ID first) such that one user has at least one instance with entity, at least one instance with location, and at least one instance with abbreviation, and the other user has exactly one instance with numeric value. Each of the questions can be labelled as one of the labels (the data does not provide the labels, you need to figure out the label from the semantics of the question): description and abstract concept, entity, human being, numeric value, location, abbreviation. In your answer, list all pairs in the format (user_id_1, user_id_2), separated by newlines.",
+   "spec": {
+    "kind": "asym",
+    "a": [
+     [
+      "entity",
+      ">=",
+      1
+     ],
+     [
+      "location",
+      ">=",
+      1
+     ],
+     [
+      "abbreviation",
+      ">=",
+      1
+     ]
+    ],
+    "b": [
+     [
+      "numeric value",
+      "==",
+      1
+     ]
+    ]
+   }
+  },
+  {
+   "task": 16,
+   "query": "In the above data, list all pairs of user IDs (no duplicate pairs, list lower ID first) such that one user has at least one instance with description and abstract concept and at least one instance with human being, and the other user has at least two instances with entity and exactly one instance with abbreviation. Each of the questions can be labelled as one of the labels (the data does not provide the labels, you need to figure out the label from the semantics of the question): description and abstract concept, entity, human being, numeric value, location, abbreviation. In your answer, list all pairs in the format (user_id_1, user_id_2), separated by newlines.",
+   "spec": {
+    "kind": "asym",
+    "a": [
+     [
+      "description and abstract concept",
+      ">=",
+      1
+     ],
+     [
+      "human being",
+      ">=",
+      1
+     ]
+    ],
+    "b": [
+     [
+      "entity",
+      ">=",
+      2
+     ],
+     [
+      "abbreviation",
+      "==",
+      1
+     ]
+    ]
+   }
+  },
+  {
+   "task": 17,
+   "query": "In the above data, list all pairs of user IDs (no duplicate pairs, list lower ID first) such that one user has exactly one instance with numeric value, and the other user has at least one instance with location and at least one instance with description and abstract concept. Each of the questions can be labelled as one of the labels (the data does not provide the labels, you need to figure out the label from the semantics of the question): description and abstract concept, entity, human being, numeric value, location, abbreviation. In your answer, list all pairs in the format (user_id_1, user_id_2), separated by newlines.",
+   "spec": {
+    "kind": "asym",
+    "a": [
+     [
+      "numeric value",
+      "==",
+      1
+     ]
+    ],
+    "b": [
+     [
+      "location",
+      ">=",
+      1
+     ],
+     [
+      "description and abstract concept",
+      ">=",
+      1
+     ]
+    ]
+   }
+  },
+  {
+   "task": 18,
+   "query": "In the above data, list all pairs of user IDs (no duplicate pairs, list lower ID first) such that one user has at least one instance with abbreviation and exactly one instance with human being, and the other user has at least one instance with entity and at least one instance with numeric value. Each of the questions can be labelled as one of the labels (the data does not provide the labels, you need to figure out the label from the semantics of the question): description and abstract concept, entity, human being, numeric value, location, abbreviation. In your answer, list all pairs in the format (user_id_1, user_id_2), separated by newlines.",
+   "spec": {
+    "kind": "asym",
+    "a": [
+     [
+      "abbreviation",
+      ">=",
+      1
+     ],
+     [
+      "human being",
+      "==",
+      1
+     ]
+    ],
+    "b": [
+     [
+      "entity",
+      ">=",
+      1
+     ],
+     [
+      "numeric value",
+      ">=",
+      1
+     ]
+    ]
+   }
+  },
+  {
+   "task": 19,
+   "query": "In the above data, list all pairs of user IDs (no duplicate pairs, list lower ID first) such that one user has at least two instances with location and at least one instance with entity, and the other user has exactly one instance with description and abstract concept and exactly one instance with abbreviation. Each of the questions can be labelled as one of the labels (the data does not provide the labels, you need to figure out the label from the semantics of the question): description and abstract concept, entity, human being, numeric value, location, abbreviation. In your answer, list all pairs in the format (user_id_1, user_id_2), separated by newlines.",
+   "spec": {
+    "kind": "asym",
+    "a": [
+     [
+      "location",
+      ">=",
+      2
+     ],
+     [
+      "entity",
+      ">=",
+      1
+     ]
+    ],
+    "b": [
+     [
+      "description and abstract concept",
+      "==",
+      1
+     ],
+     [
+      "abbreviation",
+      "==",
+      1
+     ]
+    ]
+   }
+  },
+  {
+   "task": 20,
+   "query": "In the above data, list all pairs of user IDs (no duplicate pairs, list lower ID first) such that one user has at least one instance with numeric value and at least one instance with human being, and the other user has at least one instance with location, at least one instance with entity, and exactly one instance with abbreviation. Each of the questions can be labelled as one of the labels (the data does not provide the labels, you need to figure out the label from the semantics of the question): description and abstract concept, entity, human being, numeric value, location, abbreviation. In your answer, list all pairs in the format (user_id_1, user_id_2), separated by newlines.",
+   "spec": {
+    "kind": "asym",
+    "a": [
+     [
+      "numeric value",
+      ">=",
+      1
+     ],
+     [
+      "human being",
+      ">=",
+      1
+     ]
+    ],
+    "b": [
+     [
+      "location",
+      ">=",
+      1
+     ],
+     [
+      "entity",
+      ">=",
+      1
+     ],
+     [
+      "abbreviation",
+      "==",
+      1
+     ]
+    ]
+   }
+  }
+ ],
+ "sha256": "47ed56ce4e0f0f96b4abfabc5144ec39c5b6cd9bf1031835d09361c8e2fcc91f"
+}

@@ -1,0 +1,43 @@
+{
+  "benchmark": "short-request end-to-end output throughput",
+  "date": "2026-08-18",
+  "hardware": {
+    "computer": "MacBook Pro",
+    "model_identifier": "Mac17,7",
+    "chip": "Apple M5 Max",
+    "cpu_cores": 18,
+    "gpu_cores": 32,
+    "unified_memory_gb": 36,
+    "memory_type": "LPDDR5",
+    "metal": "Metal 4",
+    "os": "macOS 26.5.2",
+    "os_build": "25F84"
+  },
+  "model": {
+    "url": "https://huggingface.co/angelgalvisc/agent-a1-alchemist-4bit",
+    "fingerprint_sha256": "f4c86d1228bdebd3a82562a642c3c9949aea346700c5ceaee1087e8650338c5c",
+    "parameters": "4B",
+    "quantization": "MLX 4-bit"
+  },
+  "protocol": {
+    "warmup_excluded": true,
+    "measured_requests": 5,
+    "prompt_type": "short numbered-fact generation",
+    "completion_tokens_per_request": 512,
+    "temperature": 0.0,
+    "thinking": false,
+    "prompt_cache_reset_before_each_request": true,
+    "decode_concurrency": 1,
+    "prompt_concurrency": 1
+  },
+  "measurement": {
+    "completion_tokens": 2560,
+    "wall_seconds": 20.085,
+    "aggregate_tokens_per_second": 127.46,
+    "mean_request_tokens_per_second": 127.46,
+    "median_request_tokens_per_second": 127.51,
+    "minimum_request_tokens_per_second": 126.90,
+    "maximum_request_tokens_per_second": 127.86
+  },
+  "scope_note": "Short-request end-to-end generation throughput; excludes RLM orchestration, semantic operations, Python execution and validation."
+}

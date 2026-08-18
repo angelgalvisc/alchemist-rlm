@@ -1,0 +1,222 @@
+{
+ "run_id": "pairs_pilot_1787004485_t01",
+ "answer": null,
+ "answer_delivered": false,
+ "answer_value_record": null,
+ "initial_final_text": null,
+ "repair_candidate_text": null,
+ "final_text": null,
+ "initial_final_text_record": null,
+ "repair_candidate_text_record": null,
+ "final_text_record": null,
+ "presentation_source": null,
+ "output_mode": "raw",
+ "contract_validation": null,
+ "output_repair": null,
+ "stop_reason": "forced_final:consecutive_truncations",
+ "turns": 9,
+ "seconds": 165.63,
+ "ledger": {
+  "turns": 7,
+  "output_tokens": 17433,
+  "subcalls": 0,
+  "nodes": 1,
+  "elapsed_s": 165.63
+ },
+ "tool_calls": 5,
+ "duplicates_observed": 0,
+ "protocol_errors": [
+  {
+   "turn": 5,
+   "kind": "truncated_generation"
+  },
+  {
+   "turn": 5,
+   "kind": "degenerate_repetition"
+  },
+  {
+   "turn": 6,
+   "kind": "truncated_generation"
+  },
+  {
+   "turn": 7,
+   "kind": "truncated_generation"
+  },
+  {
+   "turn": 8,
+   "kind": "truncated_final"
+  },
+  {
+   "turn": 9,
+   "kind": "final_block_executed",
+   "ok": true
+  }
+ ],
+ "subcalls": 0,
+ "subcalls_here": 0,
+ "subcall_detail": [],
+ "recursions": [],
+ "batching": {
+  "batches_here": 0,
+  "batches_tree": 0,
+  "batches": 0,
+  "peak_in_flight_here": 0,
+  "peak_in_flight_tree": 0,
+  "peak_in_flight": 0,
+  "sequential_calls_here": 0,
+  "sequential_calls_tree": 0,
+  "sequential_calls": 0,
+  "lazy_pulls_here": 0,
+  "lazy_pulls_tree": 0,
+  "lazy_pulls": 0,
+  "lazy_items_pulled": 0,
+  "subcalls_below": 0,
+  "provenance_rejected": 0
+ },
+ "semantic_result": null,
+ "sweeps": [],
+ "semantic_cache_hits": [],
+ "presentation_checks": [],
+ "presentation_renders": [],
+ "operations": [],
+ "certificate": null,
+ "artifacts": [],
+ "context": {
+  "name": "context",
+  "chars": 76803,
+  "lines": 796,
+  "sha256": "4d761ff162fc69b1",
+  "structure": "rows",
+  "segments": 19,
+  "segment_chars": {
+   "min": 4001,
+   "max": 4110,
+   "mean": 4042
+  },
+  "band": {
+   "min": 400,
+   "target": 4000,
+   "max": 12000
+  },
+  "first_refs": [
+   "s0000",
+   "s0001",
+   "s0002",
+   "s0003",
+   "s0004"
+  ],
+  "last_ref": "s0018",
+  "head": "The following lines contain 787 general-knowledge questions, one per line. Each question has an answer that can be described as one of 6 categories: 'location', 'numeric value', 'description and abstract concept', 'abbreviation', 'human being', 'entity'.\n\nYou will be asked to answer questions about the aggregate label statistics across all 787 examples in this dataset. Do not try to guess, estimat"
+ },
+ "trace": "${TMPDIR}/runs/pairs_pilot_1787004485_t01/trace.jsonl",
+ "visible_transcript_sha256": "b525dfd0073301cc43b9cbad550c2e399ca63281ddeaf2a37c3a67a48c3c0a2e",
+ "visible_request_sha256s": [
+  {
+   "turn": 1,
+   "channel": "reasoning",
+   "sha256": "2579902d7f7cceba474efa385ea3890591592566d19f07aff720ac6618783c21",
+   "messages": 2,
+   "max_tokens": 4096
+  },
+  {
+   "turn": 2,
+   "channel": "reasoning",
+   "sha256": "0f636636fec457906b70862d1d415fa22c9b177eef8f9c4d6960912b7d58c572",
+   "messages": 4,
+   "max_tokens": 4096
+  },
+  {
+   "turn": 3,
+   "channel": "reasoning",
+   "sha256": "4d731c0af25606ae33c354f748039feb6aa70dcbe24cf2aac6685d18527182f9",
+   "messages": 6,
+   "max_tokens": 4096
+  },
+  {
+   "turn": 4,
+   "channel": "reasoning",
+   "sha256": "db10793965421ab966e85fd4df300e38aa5b383ab9356e57750e49c3000222e3",
+   "messages": 8,
+   "max_tokens": 4096
+  },
+  {
+   "turn": 5,
+   "channel": "reasoning",
+   "sha256": "8e5b51682a8a5d13a53d29ae5aad66b12465a954d596744fbab434aa403db3d3",
+   "messages": 10,
+   "max_tokens": 4096
+  },
+  {
+   "turn": 6,
+   "channel": "reasoning",
+   "sha256": "34ea742c2156fa2831ad53b57f2440900466cf8588bbd42de9d1594b28c35e83",
+   "messages": 12,
+   "max_tokens": 4096
+  },
+  {
+   "turn": 7,
+   "channel": "reasoning",
+   "sha256": "6ce845ccbdee677308cd98c00c66c239d5547497e0064cf5b8e07a18b395e80c",
+   "messages": 14,
+   "max_tokens": 4096
+  },
+  {
+   "turn": 8,
+   "channel": "reasoning",
+   "sha256": "89ef5845680af6310078ab548fd5c5ebd72b616877f5ba77c3e6a98089fa69b8",
+   "messages": 17,
+   "max_tokens": 4096
+  },
+  {
+   "turn": 9,
+   "channel": "reasoning",
+   "sha256": "8c547e6571306640abad78dfc1754b989d37e7908ac1d94f0a21a56b5ad9ff5b",
+   "messages": 19,
+   "max_tokens": 4096
+  }
+ ],
+ "isolation_attestation": {
+  "run_id": "pairs_pilot_1787004485_t01",
+  "policy": "mlx_prompt_cache_reset_v1",
+  "epoch": 52,
+  "before": {
+   "by_type": {
+    "assistant": {
+     "n_bytes": 173703168,
+     "n_sequences": 2
+    },
+    "system": {
+     "n_bytes": 77987840,
+     "n_sequences": 1
+    },
+    "user": {
+     "n_bytes": 84541440,
+     "n_sequences": 1
+    }
+   },
+   "bytes": 336232448,
+   "sequences": 4,
+   "state_machines": 1
+  },
+  "after": {
+   "by_type": {
+    "assistant": {
+     "n_bytes": 0,
+     "n_sequences": 0
+    },
+    "system": {
+     "n_bytes": 0,
+     "n_sequences": 0
+    },
+    "user": {
+     "n_bytes": 0,
+     "n_sequences": 0
+    }
+   },
+   "bytes": 0,
+   "sequences": 0,
+   "state_machines": 0
+  },
+  "verified": true
+ }
+}

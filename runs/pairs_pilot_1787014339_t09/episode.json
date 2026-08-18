@@ -1,0 +1,495 @@
+{
+ "run_id": "pairs_pilot_1787014339_t09",
+ "answer": null,
+ "answer_delivered": false,
+ "answer_value_record": null,
+ "initial_final_text": null,
+ "repair_candidate_text": null,
+ "final_text": null,
+ "initial_final_text_record": null,
+ "repair_candidate_text_record": null,
+ "final_text_record": null,
+ "presentation_source": null,
+ "output_mode": "raw",
+ "contract_validation": null,
+ "output_repair": null,
+ "stop_reason": "forced_final:max_turns",
+ "turns": 16,
+ "seconds": 173.99,
+ "ledger": {
+  "turns": 14,
+  "output_tokens": 16162,
+  "subcalls": 12,
+  "nodes": 1,
+  "elapsed_s": 173.99
+ },
+ "tool_calls": 16,
+ "duplicates_observed": 3,
+ "protocol_errors": [
+  {
+   "turn": 9,
+   "kind": "no_bounded_work_local_progress"
+  },
+  {
+   "turn": 15,
+   "kind": "final_block_executed",
+   "ok": false
+  },
+  {
+   "turn": 16,
+   "kind": "final_block_executed",
+   "ok": false
+  }
+ ],
+ "subcalls": 12,
+ "subcalls_here": 12,
+ "subcall_detail": [
+  {
+   "index": 1,
+   "depth": 0,
+   "source_ref": "i0001",
+   "source_chars": 4104,
+   "instruction": "Judge each item below against this criterion:\n<criterion>\nClassify each question into one of the following labels: description and abstract concept, entity, human being, numeric value, location, abbre",
+   "response": "item 73: entity\nitem 74: abbreviation\nitem 75: entity\nitem 76: description and abstract concept\nitem 77: numeric value\nitem 78: numeric value\nitem 79: human being\nitem 80: abbreviation\nitem 81: description and abstract concept\nitem 82: abbreviation\nitem 83: numeric value\nitem 84: entity\nitem 85: description and abstract concept\nitem 86: location\nitem 87: abbreviation\nitem 88: description and abstr",
+   "error": null
+  },
+  {
+   "index": 0,
+   "depth": 0,
+   "source_ref": "i0000",
+   "source_chars": 4126,
+   "instruction": "Judge each item below against this criterion:\n<criterion>\nClassify each question into one of the following labels: description and abstract concept, entity, human being, numeric value, location, abbre",
+   "response": "item 0: abbreviation\nitem 1: entity\nitem 2: numeric value\nitem 3: human being\nitem 4: description and abstract concept\nitem 5: entity\nitem 6: human being\nitem 7: abbreviation\nitem 8: entity\nitem 9: description and abstract concept\nitem 10: numeric value\nitem 11: entity\nitem 12: location\nitem 13: description and abstract concept\nitem 14: numeric value\nitem 15: human being\nitem 16: abbreviation\nitem",
+   "error": null
+  },
+  {
+   "index": 3,
+   "depth": 0,
+   "source_ref": "i0003",
+   "source_chars": 4068,
+   "instruction": "Judge each item below against this criterion:\n<criterion>\nClassify each question into one of the following labels: description and abstract concept, entity, human being, numeric value, location, abbre",
+   "response": "item 204: numeric value\nitem 205: description and abstract concept\nitem 206: abbreviation\nitem 207: description and abstract concept\nitem 208: abbreviation\nitem 209: human being\nitem 210: human being\nitem 211: entity\nitem 212: description and abstract concept\nitem 213: description and abstract concept\nitem 214: numeric value\nitem 215: numeric value\nitem 216: location\nitem 217: description and abst",
+   "error": null
+  },
+  {
+   "index": 2,
+   "depth": 0,
+   "source_ref": "i0002",
+   "source_chars": 4084,
+   "instruction": "Judge each item below against this criterion:\n<criterion>\nClassify each question into one of the following labels: description and abstract concept, entity, human being, numeric value, location, abbre",
+   "response": "item 138: entity\nitem 139: numeric value\nitem 140: description and abstract concept\nitem 141: location\nitem 142: human being\nitem 143: numeric value\nitem 144: entity\nitem 145: location\nitem 146: location\nitem 147: description and abstract concept\nitem 148: numeric value\nitem 149: human being\nitem 150: description and abstract concept\nitem 151: description and abstract concept\nitem 152: numeric val",
+   "error": null
+  },
+  {
+   "index": 4,
+   "depth": 0,
+   "source_ref": "i0004",
+   "source_chars": 4085,
+   "instruction": "Judge each item below against this criterion:\n<criterion>\nClassify each question into one of the following labels: description and abstract concept, entity, human being, numeric value, location, abbre",
+   "response": "item 267: description and abstract concept\nitem 268: entity\nitem 269: entity\nitem 270: entity\nitem 271: numeric value\nitem 272: entity\nitem 273: numeric value\nitem 274: location\nitem 275: abbreviation\nitem 276: numeric value\nitem 277: abbreviation\nitem 278: numeric value\nitem 279: human being\nitem 280: entity\nitem 281: human being\nitem 282: description and abstract concept\nitem 283: abbreviation\ni",
+   "error": null
+  },
+  {
+   "index": 5,
+   "depth": 0,
+   "source_ref": "i0005",
+   "source_chars": 4101,
+   "instruction": "Judge each item below against this criterion:\n<criterion>\nClassify each question into one of the following labels: description and abstract concept, entity, human being, numeric value, location, abbre",
+   "response": "item 332: entity\nitem 333: entity\nitem 334: human being\nitem 335: location\nitem 336: description and abstract concept\nitem 337: abbreviation\nitem 338: human being\nitem 339: entity\nitem 340: numeric value\nitem 341: description and abstract concept\nitem 342: entity\nitem 343: numeric value\nitem 344: human being\nitem 345: human being\nitem 346: entity\nitem 347: human being\nitem 348: description and abs",
+   "error": null
+  },
+  {
+   "index": 6,
+   "depth": 0,
+   "source_ref": "i0006",
+   "source_chars": 4138,
+   "instruction": "Judge each item below against this criterion:\n<criterion>\nClassify each question into one of the following labels: description and abstract concept, entity, human being, numeric value, location, abbre",
+   "response": "item 399: abbreviation\nitem 400: entity\nitem 401: abbreviation\nitem 402: abbreviation\nitem 403: abbreviation\nitem 404: entity\nitem 405: abbreviation\nitem 406: description and abstract concept\nitem 407: location\nitem 408: numeric value\nitem 409: numeric value\nitem 410: entity\nitem 411: numeric value\nitem 412: entity\nitem 413: abbreviation\nitem 414: entity\nitem 415: description and abstract concept\n",
+   "error": null
+  },
+  {
+   "index": 7,
+   "depth": 0,
+   "source_ref": "i0007",
+   "source_chars": 4081,
+   "instruction": "Judge each item below against this criterion:\n<criterion>\nClassify each question into one of the following labels: description and abstract concept, entity, human being, numeric value, location, abbre",
+   "response": "item 470: description and abstract concept\nitem 471: entity\nitem 472: abbreviation\nitem 473: location\nitem 474: abbreviation\nitem 475: numeric value\nitem 476: numeric value\nitem 477: numeric value\nitem 478: entity\nitem 479: human being\nitem 480: entity\nitem 481: description and abstract concept\nitem 482: entity\nitem 483: abbreviation\nitem 484: human being\nitem 485: entity\nitem 486: abbreviation\nit",
+   "error": null
+  },
+  {
+   "index": 8,
+   "depth": 0,
+   "source_ref": "i0008",
+   "source_chars": 4114,
+   "instruction": "Judge each item below against this criterion:\n<criterion>\nClassify each question into one of the following labels: description and abstract concept, entity, human being, numeric value, location, abbre",
+   "response": "item 537: entity\nitem 538: description and abstract concept\nitem 539: human being\nitem 540: description and abstract concept\nitem 541: numeric value\nitem 542: numeric value\nitem 543: abbreviation\nitem 544: location\nitem 545: numeric value\nitem 546: human being\nitem 547: location\nitem 548: description and abstract concept\nitem 549: location\nitem 550: numeric value\nitem 551: entity\nitem 552: descrip",
+   "error": null
+  },
+  {
+   "index": 9,
+   "depth": 0,
+   "source_ref": "i0009",
+   "source_chars": 4096,
+   "instruction": "Judge each item below against this criterion:\n<criterion>\nClassify each question into one of the following labels: description and abstract concept, entity, human being, numeric value, location, abbre",
+   "response": "item 603: description and abstract concept\nitem 604: entity\nitem 605: entity\nitem 606: location\nitem 607: abbreviation\nitem 608: description and abstract concept\nitem 609: location\nitem 610: entity\nitem 611: description and abstract concept\nitem 612: description and abstract concept\nitem 613: abbreviation\nitem 614: location\nitem 615: description and abstract concept\nitem 616: numeric value\nitem 61",
+   "error": null
+  },
+  {
+   "index": 10,
+   "depth": 0,
+   "source_ref": "i0010",
+   "source_chars": 4073,
+   "instruction": "Judge each item below against this criterion:\n<criterion>\nClassify each question into one of the following labels: description and abstract concept, entity, human being, numeric value, location, abbre",
+   "response": "item 670: numeric value\nitem 671: abbreviation\nitem 672: abbreviation\nitem 673: description and abstract concept\nitem 674: entity\nitem 675: abbreviation\nitem 676: location\nitem 677: abbreviation\nitem 678: abbreviation\nitem 679: description and abstract concept\nitem 680: entity\nitem 681: abbreviation\nitem 682: human being\nitem 683: abbreviation\nitem 684: numeric value\nitem 685: location\nitem 686: n",
+   "error": null
+  },
+  {
+   "index": 11,
+   "depth": 0,
+   "source_ref": "i0011",
+   "source_chars": 3082,
+   "instruction": "Judge each item below against this criterion:\n<criterion>\nClassify each question into one of the following labels: description and abstract concept, entity, human being, numeric value, location, abbre",
+   "response": "item 738: entity\nitem 739: numeric value\nitem 740: human being\nitem 741: location\nitem 742: description and abstract concept\nitem 743: numeric value\nitem 744: location\nitem 745: entity\nitem 746: description and abstract concept\nitem 747: abbreviation\nitem 748: abbreviation\nitem 749: entity\nitem 750: numeric value\nitem 751: location\nitem 752: description and abstract concept\nitem 753: entity\nitem 7",
+   "error": null
+  }
+ ],
+ "recursions": [],
+ "batching": {
+  "batches_here": 1,
+  "batches_tree": 1,
+  "batches": 1,
+  "peak_in_flight_here": 2,
+  "peak_in_flight_tree": 2,
+  "peak_in_flight": 2,
+  "sequential_calls_here": 0,
+  "sequential_calls_tree": 0,
+  "sequential_calls": 0,
+  "lazy_pulls_here": 1,
+  "lazy_pulls_tree": 1,
+  "lazy_pulls": 1,
+  "lazy_items_pulled": 12,
+  "subcalls_below": 0,
+  "provenance_rejected": 0
+ },
+ "semantic_result": {
+  "kind": "semantic_map",
+  "operation": "semantic_map",
+  "status": "complete",
+  "coverage": {
+   "presented": 787,
+   "returned": 787,
+   "valid": 787,
+   "total": 787,
+   "complete": true,
+   "context_complete": null
+  },
+  "failed": [],
+  "scope": {
+   "kind": "provided_items",
+   "digest": "10e3367737630690",
+   "total": 787
+  },
+  "sweep_id": "71a781a92496c96625b419f93d64a469aacb68b24a504318c11647f145dd4395",
+  "schema": {
+   "type": "string",
+   "enum": [
+    "description and abstract concept",
+    "entity",
+    "human being",
+    "numeric value",
+    "location",
+    "abbreviation"
+   ]
+  },
+  "total_items": 787,
+  "presented_items": 787,
+  "returned_items": 787,
+  "unsent_items": 0,
+  "valid_items": 787,
+  "coverage_complete": true,
+  "context_coverage_complete": null,
+  "failed_items": [],
+  "parse_errors": [],
+  "cache_hit": false,
+  "retry_exhausted": false,
+  "rows_digest": "300a2cfb0b38bc639fcc718438243d9e5654d5e53d8bf6a833bae252faa95f9e",
+  "rows_ref": "artifact://semantic_rows_300a2cfb0b38bc63",
+  "note": "The returned envelope's `rows` list is complete; do not reload `rows_ref`. Each row is {'item','value','source'} — 'source' is the text that item was judged on, so no lookup back into `context` is needed, and 'item' is its position in what was judged, so anything you already hold per item lines up by index rather than by parsing 'source' again. Aggregate in Python and deliver with submit(result)."
+ },
+ "sweeps": [
+  {
+   "kind": "semantic_map",
+   "operation": "semantic_map",
+   "status": "complete",
+   "scope": "provided_items",
+   "coverage": {
+    "presented": 787,
+    "returned": 787,
+    "valid": 787,
+    "total": 787,
+    "complete": true,
+    "context_complete": null
+   },
+   "valid_items": 787,
+   "total_items": 787,
+   "coverage_complete": true,
+   "context_coverage_complete": null,
+   "failed": [],
+   "failed_items": [],
+   "sweep_id": "71a781a92496c96625b419f93d64a469aacb68b24a504318c11647f145dd4395",
+   "retry_exhausted": false,
+   "rows_ref": "artifact://semantic_rows_300a2cfb0b38bc63",
+   "rows_digest": "300a2cfb0b38bc639fcc718438243d9e5654d5e53d8bf6a833bae252faa95f9e",
+   "certificate": null
+  }
+ ],
+ "semantic_cache_hits": [
+  {
+   "operation": "semantic_map",
+   "scope": {
+    "kind": "provided_items",
+    "digest": "10e3367737630690",
+    "total": 787
+   },
+   "rows_digest": "300a2cfb0b38bc639fcc718438243d9e5654d5e53d8bf6a833bae252faa95f9e"
+  },
+  {
+   "operation": "semantic_map",
+   "scope": {
+    "kind": "provided_items",
+    "digest": "10e3367737630690",
+    "total": 787
+   },
+   "rows_digest": "300a2cfb0b38bc639fcc718438243d9e5654d5e53d8bf6a833bae252faa95f9e"
+  },
+  {
+   "operation": "semantic_map",
+   "scope": {
+    "kind": "provided_items",
+    "digest": "10e3367737630690",
+    "total": 787
+   },
+   "rows_digest": "300a2cfb0b38bc639fcc718438243d9e5654d5e53d8bf6a833bae252faa95f9e"
+  },
+  {
+   "operation": "semantic_map",
+   "scope": {
+    "kind": "provided_items",
+    "digest": "10e3367737630690",
+    "total": 787
+   },
+   "rows_digest": "300a2cfb0b38bc639fcc718438243d9e5654d5e53d8bf6a833bae252faa95f9e"
+  },
+  {
+   "operation": "semantic_map",
+   "scope": {
+    "kind": "provided_items",
+    "digest": "10e3367737630690",
+    "total": 787
+   },
+   "rows_digest": "300a2cfb0b38bc639fcc718438243d9e5654d5e53d8bf6a833bae252faa95f9e"
+  }
+ ],
+ "presentation_checks": [],
+ "presentation_renders": [],
+ "operations": [
+  "semantic_map"
+ ],
+ "certificate": null,
+ "artifacts": [
+  {
+   "name": "semantic_rows_300a2cfb0b38bc63",
+   "ref": "artifact://semantic_rows_300a2cfb0b38bc63",
+   "chars": 82808,
+   "sha256": "74295256f88d45e745586a69a02a0dc7d030aa400a6d679067c953b082620a26",
+   "kind": "json"
+  }
+ ],
+ "context": {
+  "name": "context",
+  "chars": 76803,
+  "lines": 796,
+  "sha256": "4d761ff162fc69b1",
+  "structure": "rows",
+  "segments": 19,
+  "segment_chars": {
+   "min": 4001,
+   "max": 4110,
+   "mean": 4042
+  },
+  "band": {
+   "min": 400,
+   "target": 4000,
+   "max": 12000
+  },
+  "first_refs": [
+   "s0000",
+   "s0001",
+   "s0002",
+   "s0003",
+   "s0004"
+  ],
+  "last_ref": "s0018",
+  "head": "The following lines contain 787 general-knowledge questions, one per line. Each question has an answer that can be described as one of 6 categories: 'location', 'numeric value', 'description and abstract concept', 'abbreviation', 'human being', 'entity'.\n\nYou will be asked to answer questions about the aggregate label statistics across all 787 examples in this dataset. Do not try to guess, estimat"
+ },
+ "trace": "${TMPDIR}/runs/pairs_pilot_1787014339_t09/trace.jsonl",
+ "visible_transcript_sha256": "00a9d427ed0bdccd99419176551f7ecebcc1cd3ea0712dc02b453fdfdf3a6850",
+ "visible_request_sha256s": [
+  {
+   "turn": 1,
+   "channel": "reasoning",
+   "sha256": "af33cd8e938d484a988f6767d2f983da2d1a5537afaaefaac223f6d97176c1b8",
+   "messages": 2,
+   "max_tokens": 4096
+  },
+  {
+   "turn": 2,
+   "channel": "reasoning",
+   "sha256": "da9f32fcd4bf544337351e160c3cf63e9a5337c6dd38ad248527bf3c862a00b0",
+   "messages": 4,
+   "max_tokens": 4096
+  },
+  {
+   "turn": 3,
+   "channel": "reasoning",
+   "sha256": "d6788623c8e20a51db91b4ed1a47a2fb3bd1ed75c532ad5ae7fdad41a246bcd7",
+   "messages": 6,
+   "max_tokens": 4096
+  },
+  {
+   "turn": 4,
+   "channel": "reasoning",
+   "sha256": "e6f583cf5dba01f0e6b82407475c658eaa0e7cbfa50292f1ef3a202dbfc767ca",
+   "messages": 8,
+   "max_tokens": 4096
+  },
+  {
+   "turn": 5,
+   "channel": "reasoning",
+   "sha256": "9aa49d2bcb581f3692f56169302df4a8d65686392791c8fb6a00240f2bfd1e66",
+   "messages": 10,
+   "max_tokens": 4096
+  },
+  {
+   "turn": 6,
+   "channel": "reasoning",
+   "sha256": "600e5b1b2789673f5e0f86c69407eb20239b0d9ccb4f90babb8609cbf70d04b8",
+   "messages": 12,
+   "max_tokens": 4096
+  },
+  {
+   "turn": 7,
+   "channel": "reasoning",
+   "sha256": "bb85eadae094b1c86fbeab595ee0f4d9aa26aea7b21f3ac05b537c37dbb09f88",
+   "messages": 14,
+   "max_tokens": 4096
+  },
+  {
+   "turn": 8,
+   "channel": "reasoning",
+   "sha256": "3d40d683d64b8d259a65ecb128f4e9b61f5a7854cd680947b703bd4294ca6c74",
+   "messages": 16,
+   "max_tokens": 4096
+  },
+  {
+   "turn": 9,
+   "channel": "reasoning",
+   "sha256": "f285e831df148e6208e7d5c3e0ce52b23580dab6b9fcf8add3d959c44a20200e",
+   "messages": 18,
+   "max_tokens": 4096
+  },
+  {
+   "turn": 10,
+   "channel": "reasoning",
+   "sha256": "a8184b6ec275c99b9110ef1c394fd6f125b8b170fd125fde7bbbfefffcdaca3d",
+   "messages": 20,
+   "max_tokens": 4096
+  },
+  {
+   "turn": 11,
+   "channel": "reasoning",
+   "sha256": "143208dd0ff43571ad86a02e578b6a03badcf14aaa3c50ccdaebc7c50c8114b7",
+   "messages": 22,
+   "max_tokens": 4096
+  },
+  {
+   "turn": 12,
+   "channel": "reasoning",
+   "sha256": "75893ab6304fd2cf30e7fac2901739d6125a08da03fe5f0ec5ad7eb29c3d6b0e",
+   "messages": 24,
+   "max_tokens": 4096
+  },
+  {
+   "turn": 13,
+   "channel": "reasoning",
+   "sha256": "5e92b40a889292c4dce66983d63d24180712313d0e6f64b925ff3442d3b91866",
+   "messages": 26,
+   "max_tokens": 4096
+  },
+  {
+   "turn": 14,
+   "channel": "reasoning",
+   "sha256": "8a59b95d29d7f604f131d61866b827b534f5856e0aa2838d3cd5c548c265d177",
+   "messages": 28,
+   "max_tokens": 4096
+  },
+  {
+   "turn": 15,
+   "channel": "reasoning",
+   "sha256": "3d3305467273754cdfeed8e38e608b21fec86789f3a2eeebe80a630ceee054ed",
+   "messages": 31,
+   "max_tokens": 4096
+  },
+  {
+   "turn": 16,
+   "channel": "reasoning",
+   "sha256": "1e6e49fddb808bf59969f47ad55aa3e2391dd097a6ce2077bd988acf5d9e71bd",
+   "messages": 34,
+   "max_tokens": 4096
+  }
+ ],
+ "isolation_attestation": {
+  "run_id": "pairs_pilot_1787014339_t09",
+  "policy": "mlx_prompt_cache_reset_v1",
+  "epoch": 64,
+  "before": {
+   "by_type": {
+    "assistant": {
+     "n_bytes": 175210496,
+     "n_sequences": 2
+    },
+    "system": {
+     "n_bytes": 77987840,
+     "n_sequences": 1
+    },
+    "user": {
+     "n_bytes": 85295104,
+     "n_sequences": 1
+    }
+   },
+   "bytes": 338493440,
+   "sequences": 4,
+   "state_machines": 1
+  },
+  "after": {
+   "by_type": {
+    "assistant": {
+     "n_bytes": 0,
+     "n_sequences": 0
+    },
+    "system": {
+     "n_bytes": 0,
+     "n_sequences": 0
+    },
+    "user": {
+     "n_bytes": 0,
+     "n_sequences": 0
+    }
+   },
+   "bytes": 0,
+   "sequences": 0,
+   "state_machines": 0
+  },
+  "verified": true
+ }
+}

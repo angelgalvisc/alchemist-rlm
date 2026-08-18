@@ -1,0 +1,54 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "alchemist-rlm"
+version = "0.1.0"
+description = "A Recursive Language Model runtime with verifiable coverage, built for small local models"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Angel Galvis C" }]
+keywords = ["rlm", "recursive-language-model", "long-context", "mlx", "agents"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+# `httpx` is the only third-party import anywhere under `src/`, checked rather
+# than remembered. The model server is a separate process reached over HTTP, so
+# `mlx-lm` is not a dependency of this package: it is a dependency of whatever
+# serves the weights, and pinning it here would claim a coupling that does not
+# exist.
+dependencies = ["httpx>=0.27"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+comparison = ["openai==2.54.0", "requests>=2.32.5", "rlms==0.1.3"]
+
+[project.urls]
+Homepage = "https://github.com/angelgalvisc/alchemist-rlm"
+Repository = "https://github.com/angelgalvisc/alchemist-rlm"
+Issues = "https://github.com/angelgalvisc/alchemist-rlm/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/alchemist_rlm"]
+
+# `evals`, `runs` and `configs` are evidence and experiments, not runtime. They
+# stay in the repository and out of the wheel.
+[tool.hatch.build.targets.sdist]
+include = [
+    "src/alchemist_rlm",
+    "tests",
+    "README.md",
+    "LICENSE",
+    "CITATION.cff",
+    "THIRD_PARTY_NOTICES.md",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

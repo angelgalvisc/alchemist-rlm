@@ -1,0 +1,530 @@
+{
+ "run_id": "pairs_pilot_1787015351_t17",
+ "answer": "10352, 15245\n10352, 25984\n10352, 68170\n12258, 15245\n12258, 25984\n12258, 68170\n12902, 15245\n12902, 25984\n12902, 68170\n14922, 15245\n14922, 25984\n14922, 68170\n15245, 16359\n15245, 16873\n15245, 17610\n15245, 19341\n15245, 20018\n15245, 24283\n15245, 24601\n15245, 26393\n15245, 27113\n15245, 27272\n15245, 29201\n15245, 29327\n15245, 33229\n15245, 34204\n15245, 35431\n15245, 40719\n15245, 44430\n15245, 47245\n15245, 49471\n15245, 50254\n15245, 52029\n15245, 52632\n15245, 54170\n15245, 55849\n15245, 57782\n15245, 58564\n15245, 59473\n15245, 59593\n15245, 60909\n15245, 62251\n15245, 63854\n15245, 64861\n15245, 66563\n15245, 66872\n15245, 72469\n15245, 74173\n15245, 74820\n15245, 76522\n15245, 76714\n15245, 79363\n15245, 80940\n15245, 81773\n15245, 85189\n15245, 88609\n15245, 89570\n15245, 89715\n15245, 90068\n15245, 90332\n15245, 90455\n15245, 91466\n15245, 91858\n15245, 92935\n15245, 95144\n15245, 95899\n15245, 97750\n16359, 25984\n16359, 68170\n16873, 25984\n16873, 68170\n17610, 25984\n17610, 68170\n19341, 25984\n19341, 68170\n20018, 25984\n20018, 68170\n24283, 25984\n24283, 68170\n24601, 25984\n24601, 68170\n25984, 26393\n25984, 27113\n25984, 27272\n25984, 29201\n25984, 29327\n25984, 33229\n25984, 34204\n25984, 35431\n25984, 40719\n25984, 44430\n25984, 47245\n25984, 49471\n25984, 50254\n25984, 52029\n25984, 52632\n25984, 54170\n25984, 55849\n25984, 57782\n25984, 58564\n25984, 59473\n25984, 59593\n25984, 60909\n25984, 62251\n25984, 63854\n25984, 64861\n25984, 66563\n25984, 66872\n25984, 72469\n25984, 74173\n25984, 74820\n25984, 76522\n25984, 76714\n25984, 79363\n25984, 80940\n25984, 81773\n25984, 85189\n25984, 88609\n25984, 89570\n25984, 89715\n25984, 90068\n25984, 90332\n25984, 90455\n25984, 91466\n25984, 91858\n25984, 92935\n25984, 95144\n25984, 95899\n25984, 97750\n26393, 68170\n27113, 68170\n27272, 68170\n29201, 68170\n29327, 68170\n33229, 68170\n34204, 68170\n35431, 68170\n40719, 68170\n44430, 68170\n47245, 68170\n49471, 68170\n50254, 68170\n52029, 68170\n52632, 68170\n54170, 68170\n55849, 68170\n57782, 68170\n58564, 68170\n59473, 68170\n59593, 68170\n60909, 68170\n62251, 68170\n63854, 68170\n64861, 68170\n66563, 68170\n66872, 68170\n68170, 72469\n68170, 74173\n68170, 74820\n68170, 76522\n68170, 76714\n68170, 79363\n68170, 80940\n68170, 81773\n68170, 85189\n68170, 88609\n68170, 89570\n68170, 89715\n68170, 90068\n68170, 90332\n68170, 90455\n68170, 91466\n68170, 91858\n68170, 92935\n68170, 95144\n68170, 95899\n68170, 97750",
+ "answer_delivered": true,
+ "answer_value_record": {
+  "json_type": "string",
+  "chars": 2478,
+  "sha256": "4a30af70067d63dbfb57aa7c64bd1c7466088348da6b2f3ff99156dfd0ade05a",
+  "storage": "inline",
+  "value": "10352, 15245\n10352, 25984\n10352, 68170\n12258, 15245\n12258, 25984\n12258, 68170\n12902, 15245\n12902, 25984\n12902, 68170\n14922, 15245\n14922, 25984\n14922, 68170\n15245, 16359\n15245, 16873\n15245, 17610\n15245, 19341\n15245, 20018\n15245, 24283\n15245, 24601\n15245, 26393\n15245, 27113\n15245, 27272\n15245, 29201\n15245, 29327\n15245, 33229\n15245, 34204\n15245, 35431\n15245, 40719\n15245, 44430\n15245, 47245\n15245, 49471\n15245, 50254\n15245, 52029\n15245, 52632\n15245, 54170\n15245, 55849\n15245, 57782\n15245, 58564\n15245, 59473\n15245, 59593\n15245, 60909\n15245, 62251\n15245, 63854\n15245, 64861\n15245, 66563\n15245, 66872\n15245, 72469\n15245, 74173\n15245, 74820\n15245, 76522\n15245, 76714\n15245, 79363\n15245, 80940\n15245, 81773\n15245, 85189\n15245, 88609\n15245, 89570\n15245, 89715\n15245, 90068\n15245, 90332\n15245, 90455\n15245, 91466\n15245, 91858\n15245, 92935\n15245, 95144\n15245, 95899\n15245, 97750\n16359, 25984\n16359, 68170\n16873, 25984\n16873, 68170\n17610, 25984\n17610, 68170\n19341, 25984\n19341, 68170\n20018, 25984\n20018, 68170\n24283, 25984\n24283, 68170\n24601, 25984\n24601, 68170\n25984, 26393\n25984, 27113\n25984, 27272\n25984, 29201\n25984, 29327\n25984, 33229\n25984, 34204\n25984, 35431\n25984, 40719\n25984, 44430\n25984, 47245\n25984, 49471\n25984, 50254\n25984, 52029\n25984, 52632\n25984, 54170\n25984, 55849\n25984, 57782\n25984, 58564\n25984, 59473\n25984, 59593\n25984, 60909\n25984, 62251\n25984, 63854\n25984, 64861\n25984, 66563\n25984, 66872\n25984, 72469\n25984, 74173\n25984, 74820\n25984, 76522\n25984, 76714\n25984, 79363\n25984, 80940\n25984, 81773\n25984, 85189\n25984, 88609\n25984, 89570\n25984, 89715\n25984, 90068\n25984, 90332\n25984, 90455\n25984, 91466\n25984, 91858\n25984, 92935\n25984, 95144\n25984, 95899\n25984, 97750\n26393, 68170\n27113, 68170\n27272, 68170\n29201, 68170\n29327, 68170\n33229, 68170\n34204, 68170\n35431, 68170\n40719, 68170\n44430, 68170\n47245, 68170\n49471, 68170\n50254, 68170\n52029, 68170\n52632, 68170\n54170, 68170\n55849, 68170\n57782, 68170\n58564, 68170\n59473, 68170\n59593, 68170\n60909, 68170\n62251, 68170\n63854, 68170\n64861, 68170\n66563, 68170\n66872, 68170\n68170, 72469\n68170, 74173\n68170, 74820\n68170, 76522\n68170, 76714\n68170, 79363\n68170, 80940\n68170, 81773\n68170, 85189\n68170, 88609\n68170, 89570\n68170, 89715\n68170, 90068\n68170, 90332\n68170, 90455\n68170, 91466\n68170, 91858\n68170, 92935\n68170, 95144\n68170, 95899\n68170, 97750"
+ },
+ "initial_final_text": "10352, 15245\n10352, 25984\n10352, 68170\n12258, 15245\n12258, 25984\n12258, 68170\n12902, 15245\n12902, 25984\n12902, 68170\n14922, 15245\n14922, 25984\n14922, 68170\n15245, 16359\n15245, 16873\n15245, 17610\n15245, 19341\n15245, 20018\n15245, 24283\n15245, 24601\n15245, 26393\n15245, 27113\n15245, 27272\n15245, 29201\n15245, 29327\n15245, 33229\n15245, 34204\n15245, 35431\n15245, 40719\n15245, 44430\n15245, 47245\n15245, 49471\n15245, 50254\n15245, 52029\n15245, 52632\n15245, 54170\n15245, 55849\n15245, 57782\n15245, 58564\n15245, 59473\n15245, 59593\n15245, 60909\n15245, 62251\n15245, 63854\n15245, 64861\n15245, 66563\n15245, 66872\n15245, 72469\n15245, 74173\n15245, 74820\n15245, 76522\n15245, 76714\n15245, 79363\n15245, 80940\n15245, 81773\n15245, 85189\n15245, 88609\n15245, 89570\n15245, 89715\n15245, 90068\n15245, 90332\n15245, 90455\n15245, 91466\n15245, 91858\n15245, 92935\n15245, 95144\n15245, 95899\n15245, 97750\n16359, 25984\n16359, 68170\n16873, 25984\n16873, 68170\n17610, 25984\n17610, 68170\n19341, 25984\n19341, 68170\n20018, 25984\n20018, 68170\n24283, 25984\n24283, 68170\n24601, 25984\n24601, 68170\n25984, 26393\n25984, 27113\n25984, 27272\n25984, 29201\n25984, 29327\n25984, 33229\n25984, 34204\n25984, 35431\n25984, 40719\n25984, 44430\n25984, 47245\n25984, 49471\n25984, 50254\n25984, 52029\n25984, 52632\n25984, 54170\n25984, 55849\n25984, 57782\n25984, 58564\n25984, 59473\n25984, 59593\n25984, 60909\n25984, 62251\n25984, 63854\n25984, 64861\n25984, 66563\n25984, 66872\n25984, 72469\n25984, 74173\n25984, 74820\n25984, 76522\n25984, 76714\n25984, 79363\n25984, 80940\n25984, 81773\n25984, 85189\n25984, 88609\n25984, 89570\n25984, 89715\n25984, 90068\n25984, 90332\n25984, 90455\n25984, 91466\n25984, 91858\n25984, 92935\n25984, 95144\n25984, 95899\n25984, 97750\n26393, 68170\n27113, 68170\n27272, 68170\n29201, 68170\n29327, 68170\n33229, 68170\n34204, 68170\n35431, 68170\n40719, 68170\n44430, 68170\n47245, 68170\n49471, 68170\n50254, 68170\n52029, 68170\n52632, 68170\n54170, 68170\n55849, 68170\n57782, 68170\n58564, 68170\n59473, 68170\n59593, 68170\n60909, 68170\n62251, 68170\n63854, 68170\n64861, 68170\n66563, 68170\n66872, 68170\n68170, 72469\n68170, 74173\n68170, 74820\n68170, 76522\n68170, 76714\n68170, 79363\n68170, 80940\n68170, 81773\n68170, 85189\n68170, 88609\n68170, 89570\n68170, 89715\n68170, 90068\n68170, 90332\n68170, 90455\n68170, 91466\n68170, 91858\n68170, 92935\n68170, 95144\n68170, 95899\n68170, 97750",
+ "repair_candidate_text": null,
+ "final_text": "10352, 15245\n10352, 25984\n10352, 68170\n12258, 15245\n12258, 25984\n12258, 68170\n12902, 15245\n12902, 25984\n12902, 68170\n14922, 15245\n14922, 25984\n14922, 68170\n15245, 16359\n15245, 16873\n15245, 17610\n15245, 19341\n15245, 20018\n15245, 24283\n15245, 24601\n15245, 26393\n15245, 27113\n15245, 27272\n15245, 29201\n15245, 29327\n15245, 33229\n15245, 34204\n15245, 35431\n15245, 40719\n15245, 44430\n15245, 47245\n15245, 49471\n15245, 50254\n15245, 52029\n15245, 52632\n15245, 54170\n15245, 55849\n15245, 57782\n15245, 58564\n15245, 59473\n15245, 59593\n15245, 60909\n15245, 62251\n15245, 63854\n15245, 64861\n15245, 66563\n15245, 66872\n15245, 72469\n15245, 74173\n15245, 74820\n15245, 76522\n15245, 76714\n15245, 79363\n15245, 80940\n15245, 81773\n15245, 85189\n15245, 88609\n15245, 89570\n15245, 89715\n15245, 90068\n15245, 90332\n15245, 90455\n15245, 91466\n15245, 91858\n15245, 92935\n15245, 95144\n15245, 95899\n15245, 97750\n16359, 25984\n16359, 68170\n16873, 25984\n16873, 68170\n17610, 25984\n17610, 68170\n19341, 25984\n19341, 68170\n20018, 25984\n20018, 68170\n24283, 25984\n24283, 68170\n24601, 25984\n24601, 68170\n25984, 26393\n25984, 27113\n25984, 27272\n25984, 29201\n25984, 29327\n25984, 33229\n25984, 34204\n25984, 35431\n25984, 40719\n25984, 44430\n25984, 47245\n25984, 49471\n25984, 50254\n25984, 52029\n25984, 52632\n25984, 54170\n25984, 55849\n25984, 57782\n25984, 58564\n25984, 59473\n25984, 59593\n25984, 60909\n25984, 62251\n25984, 63854\n25984, 64861\n25984, 66563\n25984, 66872\n25984, 72469\n25984, 74173\n25984, 74820\n25984, 76522\n25984, 76714\n25984, 79363\n25984, 80940\n25984, 81773\n25984, 85189\n25984, 88609\n25984, 89570\n25984, 89715\n25984, 90068\n25984, 90332\n25984, 90455\n25984, 91466\n25984, 91858\n25984, 92935\n25984, 95144\n25984, 95899\n25984, 97750\n26393, 68170\n27113, 68170\n27272, 68170\n29201, 68170\n29327, 68170\n33229, 68170\n34204, 68170\n35431, 68170\n40719, 68170\n44430, 68170\n47245, 68170\n49471, 68170\n50254, 68170\n52029, 68170\n52632, 68170\n54170, 68170\n55849, 68170\n57782, 68170\n58564, 68170\n59473, 68170\n59593, 68170\n60909, 68170\n62251, 68170\n63854, 68170\n64861, 68170\n66563, 68170\n66872, 68170\n68170, 72469\n68170, 74173\n68170, 74820\n68170, 76522\n68170, 76714\n68170, 79363\n68170, 80940\n68170, 81773\n68170, 85189\n68170, 88609\n68170, 89570\n68170, 89715\n68170, 90068\n68170, 90332\n68170, 90455\n68170, 91466\n68170, 91858\n68170, 92935\n68170, 95144\n68170, 95899\n68170, 97750",
+ "initial_final_text_record": {
+  "chars": 2300,
+  "sha256": "8a3964e881231b96ea41e6a38fc5d753d4a767fb7366d56c189f53dc95d800dc",
+  "storage": "inline",
+  "text": "10352, 15245\n10352, 25984\n10352, 68170\n12258, 15245\n12258, 25984\n12258, 68170\n12902, 15245\n12902, 25984\n12902, 68170\n14922, 15245\n14922, 25984\n14922, 68170\n15245, 16359\n15245, 16873\n15245, 17610\n15245, 19341\n15245, 20018\n15245, 24283\n15245, 24601\n15245, 26393\n15245, 27113\n15245, 27272\n15245, 29201\n15245, 29327\n15245, 33229\n15245, 34204\n15245, 35431\n15245, 40719\n15245, 44430\n15245, 47245\n15245, 49471\n15245, 50254\n15245, 52029\n15245, 52632\n15245, 54170\n15245, 55849\n15245, 57782\n15245, 58564\n15245, 59473\n15245, 59593\n15245, 60909\n15245, 62251\n15245, 63854\n15245, 64861\n15245, 66563\n15245, 66872\n15245, 72469\n15245, 74173\n15245, 74820\n15245, 76522\n15245, 76714\n15245, 79363\n15245, 80940\n15245, 81773\n15245, 85189\n15245, 88609\n15245, 89570\n15245, 89715\n15245, 90068\n15245, 90332\n15245, 90455\n15245, 91466\n15245, 91858\n15245, 92935\n15245, 95144\n15245, 95899\n15245, 97750\n16359, 25984\n16359, 68170\n16873, 25984\n16873, 68170\n17610, 25984\n17610, 68170\n19341, 25984\n19341, 68170\n20018, 25984\n20018, 68170\n24283, 25984\n24283, 68170\n24601, 25984\n24601, 68170\n25984, 26393\n25984, 27113\n25984, 27272\n25984, 29201\n25984, 29327\n25984, 33229\n25984, 34204\n25984, 35431\n25984, 40719\n25984, 44430\n25984, 47245\n25984, 49471\n25984, 50254\n25984, 52029\n25984, 52632\n25984, 54170\n25984, 55849\n25984, 57782\n25984, 58564\n25984, 59473\n25984, 59593\n25984, 60909\n25984, 62251\n25984, 63854\n25984, 64861\n25984, 66563\n25984, 66872\n25984, 72469\n25984, 74173\n25984, 74820\n25984, 76522\n25984, 76714\n25984, 79363\n25984, 80940\n25984, 81773\n25984, 85189\n25984, 88609\n25984, 89570\n25984, 89715\n25984, 90068\n25984, 90332\n25984, 90455\n25984, 91466\n25984, 91858\n25984, 92935\n25984, 95144\n25984, 95899\n25984, 97750\n26393, 68170\n27113, 68170\n27272, 68170\n29201, 68170\n29327, 68170\n33229, 68170\n34204, 68170\n35431, 68170\n40719, 68170\n44430, 68170\n47245, 68170\n49471, 68170\n50254, 68170\n52029, 68170\n52632, 68170\n54170, 68170\n55849, 68170\n57782, 68170\n58564, 68170\n59473, 68170\n59593, 68170\n60909, 68170\n62251, 68170\n63854, 68170\n64861, 68170\n66563, 68170\n66872, 68170\n68170, 72469\n68170, 74173\n68170, 74820\n68170, 76522\n68170, 76714\n68170, 79363\n68170, 80940\n68170, 81773\n68170, 85189\n68170, 88609\n68170, 89570\n68170, 89715\n68170, 90068\n68170, 90332\n68170, 90455\n68170, 91466\n68170, 91858\n68170, 92935\n68170, 95144\n68170, 95899\n68170, 97750"
+ },
+ "repair_candidate_text_record": null,
+ "final_text_record": {
+  "chars": 2300,
+  "sha256": "8a3964e881231b96ea41e6a38fc5d753d4a767fb7366d56c189f53dc95d800dc",
+  "storage": "inline",
+  "text": "10352, 15245\n10352, 25984\n10352, 68170\n12258, 15245\n12258, 25984\n12258, 68170\n12902, 15245\n12902, 25984\n12902, 68170\n14922, 15245\n14922, 25984\n14922, 68170\n15245, 16359\n15245, 16873\n15245, 17610\n15245, 19341\n15245, 20018\n15245, 24283\n15245, 24601\n15245, 26393\n15245, 27113\n15245, 27272\n15245, 29201\n15245, 29327\n15245, 33229\n15245, 34204\n15245, 35431\n15245, 40719\n15245, 44430\n15245, 47245\n15245, 49471\n15245, 50254\n15245, 52029\n15245, 52632\n15245, 54170\n15245, 55849\n15245, 57782\n15245, 58564\n15245, 59473\n15245, 59593\n15245, 60909\n15245, 62251\n15245, 63854\n15245, 64861\n15245, 66563\n15245, 66872\n15245, 72469\n15245, 74173\n15245, 74820\n15245, 76522\n15245, 76714\n15245, 79363\n15245, 80940\n15245, 81773\n15245, 85189\n15245, 88609\n15245, 89570\n15245, 89715\n15245, 90068\n15245, 90332\n15245, 90455\n15245, 91466\n15245, 91858\n15245, 92935\n15245, 95144\n15245, 95899\n15245, 97750\n16359, 25984\n16359, 68170\n16873, 25984\n16873, 68170\n17610, 25984\n17610, 68170\n19341, 25984\n19341, 68170\n20018, 25984\n20018, 68170\n24283, 25984\n24283, 68170\n24601, 25984\n24601, 68170\n25984, 26393\n25984, 27113\n25984, 27272\n25984, 29201\n25984, 29327\n25984, 33229\n25984, 34204\n25984, 35431\n25984, 40719\n25984, 44430\n25984, 47245\n25984, 49471\n25984, 50254\n25984, 52029\n25984, 52632\n25984, 54170\n25984, 55849\n25984, 57782\n25984, 58564\n25984, 59473\n25984, 59593\n25984, 60909\n25984, 62251\n25984, 63854\n25984, 64861\n25984, 66563\n25984, 66872\n25984, 72469\n25984, 74173\n25984, 74820\n25984, 76522\n25984, 76714\n25984, 79363\n25984, 80940\n25984, 81773\n25984, 85189\n25984, 88609\n25984, 89570\n25984, 89715\n25984, 90068\n25984, 90332\n25984, 90455\n25984, 91466\n25984, 91858\n25984, 92935\n25984, 95144\n25984, 95899\n25984, 97750\n26393, 68170\n27113, 68170\n27272, 68170\n29201, 68170\n29327, 68170\n33229, 68170\n34204, 68170\n35431, 68170\n40719, 68170\n44430, 68170\n47245, 68170\n49471, 68170\n50254, 68170\n52029, 68170\n52632, 68170\n54170, 68170\n55849, 68170\n57782, 68170\n58564, 68170\n59473, 68170\n59593, 68170\n60909, 68170\n62251, 68170\n63854, 68170\n64861, 68170\n66563, 68170\n66872, 68170\n68170, 72469\n68170, 74173\n68170, 74820\n68170, 76522\n68170, 76714\n68170, 79363\n68170, 80940\n68170, 81773\n68170, 85189\n68170, 88609\n68170, 89570\n68170, 89715\n68170, 90068\n68170, 90332\n68170, 90455\n68170, 91466\n68170, 91858\n68170, 92935\n68170, 95144\n68170, 95899\n68170, 97750"
+ },
+ "presentation_source": "legacy_render",
+ "output_mode": "validate_repair",
+ "contract_validation": {
+  "valid": false,
+  "errors": [],
+  "issues": [
+   {
+    "code": "pair_parentheses_required",
+    "message": "each cited line contains two numeric IDs separated by a comma but lacks the required literal opening '(' and closing ')' delimiters; enclose every complete line as (lower_numeric_id, higher_numeric_id); other issue codes remain independent",
+    "count": 177,
+    "examples": [
+     "line 1: '10352, 15245'",
+     "line 2: '10352, 25984'",
+     "line 3: '10352, 68170'"
+    ]
+   }
+  ],
+  "structural_valid": false,
+  "binding": {
+   "valid": false,
+   "errors": [
+    "structural validation failed before equivalence"
+   ],
+   "skipped": true
+  }
+ },
+ "output_repair": {
+  "attempted": true,
+  "promoted": false,
+  "initial_validation": {
+   "valid": false,
+   "errors": [],
+   "issues": [
+    {
+     "code": "pair_parentheses_required",
+     "message": "each cited line contains two numeric IDs separated by a comma but lacks the required literal opening '(' and closing ')' delimiters; enclose every complete line as (lower_numeric_id, higher_numeric_id); other issue codes remain independent",
+     "count": 177,
+     "examples": [
+      "line 1: '10352, 15245'",
+      "line 2: '10352, 25984'",
+      "line 3: '10352, 68170'"
+     ]
+    }
+   ],
+   "structural_valid": false,
+   "binding": {
+    "valid": false,
+    "errors": [
+     "structural validation failed before equivalence"
+    ],
+    "skipped": true
+   }
+  },
+  "attempts": [
+   {
+    "attempt": 1,
+    "candidate_committed": false,
+    "protocol_error": "presentation_source_required",
+    "error": {
+     "type": "PresentationSourceRequired",
+     "message": "a clean presentation build must use PRESENTATION_VALUE, PRESENTATION_TEXT, PRESENTATION_DRAFT, or the directly submitted persistent source variable; these are direct Python globals, not modules or files, so reference the name directly in the block",
+     "traceback": ""
+    }
+   },
+   {
+    "attempt": 2,
+    "candidate_committed": false,
+    "protocol_error": "invalid_signature_or_block",
+    "error": {
+     "type": "NameError",
+     "message": "name 'PRESENTATION_DRAFT' is not defined",
+     "traceback": "Traceback (most recent call last):\n  File \"<rlm>\", line 3, in <module>\nNameError: name 'PRESENTATION_DRAFT' is not defined\n"
+    }
+   },
+   {
+    "attempt": 3,
+    "candidate_committed": false,
+    "protocol_error": "presentation_source_required",
+    "error": {
+     "type": "PresentationSourceRequired",
+     "message": "a clean presentation build must use PRESENTATION_VALUE, PRESENTATION_TEXT, PRESENTATION_DRAFT, or the directly submitted persistent source variable; these are direct Python globals, not modules or files, so reference the name directly in the block",
+     "traceback": ""
+    }
+   },
+   {
+    "attempt": 4,
+    "candidate_committed": false,
+    "protocol_error": "invalid_signature_or_block",
+    "error": {
+     "type": "NameError",
+     "message": "name 'PRESENTATION_DRAFT' is not defined",
+     "traceback": "Traceback (most recent call last):\n  File \"<rlm>\", line 3, in <module>\nNameError: name 'PRESENTATION_DRAFT' is not defined\n"
+    },
+    "repeated_failed_block": true,
+    "previous_failed_attempt": 2,
+    "next_actions": [
+     "this exact block already produced the same error; change the Python before calling the tool again"
+    ]
+   },
+   {
+    "attempt": 5,
+    "candidate_committed": false,
+    "clean_progress": true,
+    "clean_build_turn": 1,
+    "source": "stdout_draft",
+    "draft_sha256": "c77901ac9b15e28f31512c202a177c9d78474df03688ae8f56baa56383e7040f",
+    "draft_chars": 5853,
+    "draft_validation": {
+     "valid": false,
+     "errors": [],
+     "issues": [
+      {
+       "code": "pair_parentheses_required",
+       "message": "each cited line contains two numeric IDs separated by a comma but lacks the required literal opening '(' and closing ')' delimiters; enclose every complete line as (lower_numeric_id, higher_numeric_id); other issue codes remain independent",
+       "count": 352,
+       "examples": [
+        "line 4: '10352, 25984'",
+        "line 5: '10352, 68170'",
+        "line 6: '12258, 15245'"
+       ]
+      },
+      {
+       "code": "invalid_pair_line",
+       "message": "each line must contain only (lower_numeric_id, higher_numeric_id); quoted excerpts are received invalid lines, not desired output",
+       "count": 6,
+       "examples": [
+        "line 1: \"globals: ['PRESENTATION_CONTRACT', 'PRESENTATION_SPEC', 'PRESENTATION_TEXT', 'PRESENTATION_VALUE', '__builtins__', '__n…\"",
+        "line 2: 'PRESENTATION_DRAFT: not found'",
+        "line 3: 'PRESENTATION_VALUE: 10352, 15245'"
+       ]
+      },
+      {
+       "code": "duplicate_pair",
+       "message": "pairs must not duplicate an earlier pair",
+       "count": 176,
+       "examples": [
+        "line 181: '10352, 25984' repeats line 4",
+        "line 182: '10352, 68170' repeats line 5",
+        "line 183: '12258, 15245' repeats line 6"
+       ]
+      }
+     ],
+     "structural_valid": false,
+     "binding": {
+      "valid": false,
+      "errors": [
+       "structural validation failed before equivalence"
+      ],
+      "skipped": true
+     }
+    },
+    "draft_persisted": true
+   },
+   {
+    "attempt": 6,
+    "candidate_committed": false,
+    "reserved_commit_turn": true,
+    "protocol_error": "presentation_commit_required",
+    "error": {
+     "type": "PresentationCommitRequired",
+     "message": "this is a commit-only presentation turn; submit the complete string variable now",
+     "traceback": ""
+    }
+   }
+  ],
+  "inferred_presentation_spec": {
+   "version": 1,
+   "kind": "records",
+   "record_separator": "newline",
+   "prefix": "(",
+   "suffix": ")",
+   "field_separator": ",",
+   "fields": [
+    "string",
+    "string"
+   ],
+   "ordering": "numeric_ascending",
+   "duplicates": false,
+   "allow_empty": false,
+   "additional_text": false
+  },
+  "source_variable": "output",
+  "history_compacted_after_attempt": 1,
+  "history_compacted_after_attempts": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "draft_sha256": "c77901ac9b15e28f31512c202a177c9d78474df03688ae8f56baa56383e7040f",
+  "draft_validation": {
+   "valid": false,
+   "errors": [],
+   "issues": [
+    {
+     "code": "pair_parentheses_required",
+     "message": "each cited line contains two numeric IDs separated by a comma but lacks the required literal opening '(' and closing ')' delimiters; enclose every complete line as (lower_numeric_id, higher_numeric_id); other issue codes remain independent",
+     "count": 352,
+     "examples": [
+      "line 4: '10352, 25984'",
+      "line 5: '10352, 68170'",
+      "line 6: '12258, 15245'"
+     ]
+    },
+    {
+     "code": "invalid_pair_line",
+     "message": "each line must contain only (lower_numeric_id, higher_numeric_id); quoted excerpts are received invalid lines, not desired output",
+     "count": 6,
+     "examples": [
+      "line 1: \"globals: ['PRESENTATION_CONTRACT', 'PRESENTATION_SPEC', 'PRESENTATION_TEXT', 'PRESENTATION_VALUE', '__builtins__', '__n…\"",
+      "line 2: 'PRESENTATION_DRAFT: not found'",
+      "line 3: 'PRESENTATION_VALUE: 10352, 15245'"
+     ]
+    },
+    {
+     "code": "duplicate_pair",
+     "message": "pairs must not duplicate an earlier pair",
+     "count": 176,
+     "examples": [
+      "line 181: '10352, 25984' repeats line 4",
+      "line 182: '10352, 68170' repeats line 5",
+      "line 183: '12258, 15245' repeats line 6"
+     ]
+    }
+   ],
+   "structural_valid": false,
+   "binding": {
+    "valid": false,
+    "errors": [
+     "structural validation failed before equivalence"
+    ],
+    "skipped": true
+   }
+  },
+  "clean_build_turns": 1,
+  "commit_reserve_earned_after_attempt": 5,
+  "history_compacted_for_commit_reserve_after_attempt": 5,
+  "commit_reserve_used": true,
+  "error": "presentation_commit_required"
+ },
+ "stop_reason": "submitted",
+ "turns": 20,
+ "seconds": 126.62,
+ "ledger": {
+  "turns": 14,
+  "output_tokens": 10912,
+  "subcalls": 0,
+  "nodes": 1,
+  "elapsed_s": 126.62
+ },
+ "tool_calls": 20,
+ "duplicates_observed": 0,
+ "protocol_errors": [
+  {
+   "turn": 9,
+   "kind": "no_bounded_work_local_progress"
+  }
+ ],
+ "subcalls": 0,
+ "subcalls_here": 0,
+ "subcall_detail": [],
+ "recursions": [],
+ "batching": {
+  "batches_here": 0,
+  "batches_tree": 0,
+  "batches": 0,
+  "peak_in_flight_here": 0,
+  "peak_in_flight_tree": 0,
+  "peak_in_flight": 0,
+  "sequential_calls_here": 0,
+  "sequential_calls_tree": 0,
+  "sequential_calls": 0,
+  "lazy_pulls_here": 0,
+  "lazy_pulls_tree": 0,
+  "lazy_pulls": 0,
+  "lazy_items_pulled": 0,
+  "subcalls_below": 0,
+  "provenance_rejected": 0
+ },
+ "semantic_result": null,
+ "sweeps": [],
+ "semantic_cache_hits": [],
+ "presentation_checks": [],
+ "presentation_renders": [],
+ "operations": [],
+ "certificate": null,
+ "artifacts": [],
+ "context": {
+  "name": "context",
+  "chars": 76803,
+  "lines": 796,
+  "sha256": "4d761ff162fc69b1",
+  "structure": "rows",
+  "segments": 19,
+  "segment_chars": {
+   "min": 4001,
+   "max": 4110,
+   "mean": 4042
+  },
+  "band": {
+   "min": 400,
+   "target": 4000,
+   "max": 12000
+  },
+  "first_refs": [
+   "s0000",
+   "s0001",
+   "s0002",
+   "s0003",
+   "s0004"
+  ],
+  "last_ref": "s0018",
+  "head": "The following lines contain 787 general-knowledge questions, one per line. Each question has an answer that can be described as one of 6 categories: 'location', 'numeric value', 'description and abstract concept', 'abbreviation', 'human being', 'entity'.\n\nYou will be asked to answer questions about the aggregate label statistics across all 787 examples in this dataset. Do not try to guess, estimat"
+ },
+ "trace": "${TMPDIR}/runs/pairs_pilot_1787015351_t17/trace.jsonl",
+ "visible_transcript_sha256": "3acdf62914150d29b00f3aa46e4f0ba911b87a07099e0ed56c05ae15962b2f27",
+ "visible_request_sha256s": [
+  {
+   "turn": 1,
+   "channel": "reasoning",
+   "sha256": "bb62d02e6481ed5a9016d69ca360e788d1d87b028d838f0574abc9fabcc89db7",
+   "messages": 2,
+   "max_tokens": 4096
+  },
+  {
+   "turn": 2,
+   "channel": "reasoning",
+   "sha256": "a59b7661641f6cc2a02776a2aa42b33ada12b7c2a36d9088f7a723ceade18f01",
+   "messages": 4,
+   "max_tokens": 4096
+  },
+  {
+   "turn": 3,
+   "channel": "reasoning",
+   "sha256": "e85e7454c8dcc73c66ab108d956ba9532e9b0f6e9cdb00bad2f566a24c8fac67",
+   "messages": 6,
+   "max_tokens": 4096
+  },
+  {
+   "turn": 4,
+   "channel": "reasoning",
+   "sha256": "a18e6f7b82db732b5c6f5b932eb83dcebdc8fb940aa60318f1ae1b2f7e680b20",
+   "messages": 8,
+   "max_tokens": 4096
+  },
+  {
+   "turn": 5,
+   "channel": "reasoning",
+   "sha256": "70db6975ca4dc8f9b0e17f4a247c5c07442e121fa0138c1029560eb2ded456d8",
+   "messages": 10,
+   "max_tokens": 4096
+  },
+  {
+   "turn": 6,
+   "channel": "reasoning",
+   "sha256": "0abf7d33b2cd4fe161a0fc398ff924c5644457e25555296edccfd4aee84cee85",
+   "messages": 12,
+   "max_tokens": 4096
+  },
+  {
+   "turn": 7,
+   "channel": "reasoning",
+   "sha256": "291f203c9a2f934bbc105c6204d92d5fef9f8e1ceee890b58923ba74e2700211",
+   "messages": 14,
+   "max_tokens": 4096
+  },
+  {
+   "turn": 8,
+   "channel": "reasoning",
+   "sha256": "fdae3e4cab7e3a5b61b533d99692b39b49a79711999f5c3c1cb7f059488a7fc2",
+   "messages": 16,
+   "max_tokens": 4096
+  },
+  {
+   "turn": 9,
+   "channel": "reasoning",
+   "sha256": "7067379ba7de5c6be75f05c6ed0c449a736f6061038d702cc2873ca7ccb84282",
+   "messages": 18,
+   "max_tokens": 4096
+  },
+  {
+   "turn": 10,
+   "channel": "reasoning",
+   "sha256": "4bbd4d9c2ce14184920886ce1ae62848df657566e7d182a708c1b091121f3b04",
+   "messages": 20,
+   "max_tokens": 4096
+  },
+  {
+   "turn": 11,
+   "channel": "reasoning",
+   "sha256": "7e3f66827ec49e8b4e42efa32806292df0f0519192c4ef46d9e93a99aef3e1a2",
+   "messages": 22,
+   "max_tokens": 4096
+  },
+  {
+   "turn": 12,
+   "channel": "reasoning",
+   "sha256": "347f3604afa5785dba77998ce9470e0f593ed30501c7284add0a36f5dbd42450",
+   "messages": 24,
+   "max_tokens": 4096
+  },
+  {
+   "turn": 13,
+   "channel": "reasoning",
+   "sha256": "82aef8819041946c5d64f6741b44b5305ed2102cfe5fa9283143412b1b94b6f5",
+   "messages": 26,
+   "max_tokens": 4096
+  },
+  {
+   "turn": 14,
+   "channel": "reasoning",
+   "sha256": "964cefea0ac5f62bdda501914513810a9cc5dcce0ab862424332986b37245bb3",
+   "messages": 28,
+   "max_tokens": 4096
+  },
+  {
+   "turn": 15,
+   "channel": "presentation",
+   "sha256": "cd7e2f6ea45d912378fff775106f038d3236156b92e5cd6f2b38676f23b3ba6f",
+   "messages": 31,
+   "max_tokens": 4096
+  },
+  {
+   "turn": 16,
+   "channel": "presentation",
+   "sha256": "9703a63307703b74d46fbb2db7e1e228e1acddcd297671f08a22fe4c68cadbe3",
+   "messages": 3,
+   "max_tokens": 1024
+  },
+  {
+   "turn": 17,
+   "channel": "presentation",
+   "sha256": "812acbf3ad04fae35174c6a4780319da61358bbb754d1d0f8a56bf9a65c4950b",
+   "messages": 3,
+   "max_tokens": 1024
+  },
+  {
+   "turn": 18,
+   "channel": "presentation",
+   "sha256": "9703a63307703b74d46fbb2db7e1e228e1acddcd297671f08a22fe4c68cadbe3",
+   "messages": 3,
+   "max_tokens": 1024
+  },
+  {
+   "turn": 19,
+   "channel": "presentation",
+   "sha256": "2a2e73df2bfd2f262aefdcfcd89af24b502fbe5d0ec1878a53a29823c2a0708a",
+   "messages": 3,
+   "max_tokens": 1024
+  },
+  {
+   "turn": 20,
+   "channel": "presentation",
+   "sha256": "a45df04e370dc1fdc13a75e11d8e07ffa084b11645ee58418c2e87d2f5ff6785",
+   "messages": 4,
+   "max_tokens": 1024
+  }
+ ],
+ "isolation_attestation": {
+  "run_id": "pairs_pilot_1787015351_t17",
+  "policy": "mlx_prompt_cache_reset_v1",
+  "epoch": 76,
+  "before": {
+   "by_type": {
+    "assistant": {
+     "n_bytes": 174948352,
+     "n_sequences": 2
+    },
+    "system": {
+     "n_bytes": 77987840,
+     "n_sequences": 1
+    },
+    "user": {
+     "n_bytes": 85164032,
+     "n_sequences": 1
+    }
+   },
+   "bytes": 338100224,
+   "sequences": 4,
+   "state_machines": 1
+  },
+  "after": {
+   "by_type": {
+    "assistant": {
+     "n_bytes": 0,
+     "n_sequences": 0
+    },
+    "system": {
+     "n_bytes": 0,
+     "n_sequences": 0
+    },
+    "user": {
+     "n_bytes": 0,
+     "n_sequences": 0
+    }
+   },
+   "bytes": 0,
+   "sequences": 0,
+   "state_machines": 0
+  },
+  "verified": true
+ }
+}
